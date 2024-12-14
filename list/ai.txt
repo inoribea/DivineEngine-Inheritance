@@ -1,0 +1,48 @@
+payload:
+  - '+.openai.com'
+  - '+.openai.nooc.ink'
+  - '+.AI.com'
+  - '+.cdn.auth0.com'
+  - '+.azureedge.net'
+  - '+.sentry.io'
+  - '+.azurefd.net'
+  - '+.intercomcdn.com'
+  - '+.intercom.io'
+  - '+.google-analytics.com'
+  - '+.identrust.com'
+  - '+.ai.com'
+  - '+.bard.google.com'
+  - '+.gemini.google.com'
+  - 'generativelanguage.googleapis.com'
+  - 'cdn.usefathom.com'
+  - '+.anthropic.com'
+  - '+.claude.ai'
+  - '+.poe.com'
+  - '+.groq.com
+
+
+#CiciAI
+  - '+.ciciai.com'
+  - '+.vcs-sg.byteoversea.com'
+  - '+.vmweb-va.ciciai.com'
+  - '+.mcs-va.ciciai.com'
+  - '+.lf-rc1.yhgfb-static.com'
+  - '+.itobsnssdk.com'
+  - '+.ciciaicdn.com'
+  - '+.abtestvm-sg.bytedance.com'
+  - '+.starling-oversea.byteoversea.com'
+  - '+.sf16-tcc-tos-sg.byteoversea.com'
+  - '+.bytedapm.com'
+
+#MarsCode CiciVersion
+  - '+.marscode.com'
+  - '+.zijieapi.com'
+  - '+.api.marscode.com'
+  - '+.api-sg-central.marscode.com'
+  - '+.mon-va.byteoversea.com
+  - '+.sgali-mcs.byteoversea.com'
+  - '+.maliva-mcs.byteoversea.com'
+  - '+.mcs.zijieapi.com'
+  - '+.mon.zijieapi.com'
+  - '+.lf-cdn.marscode.com'
+  - '+.abtestvm.bytedance.com'
