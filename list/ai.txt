@@ -20,8 +20,6 @@ payload:
   - '+.claude.ai'
   - '+.poe.com'
   - '+.groq.com
-
-
 #CiciAI
   - '+.ciciai.com'
   - '+.vcs-sg.byteoversea.com'
@@ -34,7 +32,6 @@ payload:
   - '+.starling-oversea.byteoversea.com'
   - '+.sf16-tcc-tos-sg.byteoversea.com'
   - '+.bytedapm.com'
-
 #MarsCode CiciVersion
   - '+.marscode.com'
   - '+.zijieapi.com'
