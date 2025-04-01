@@ -33,7 +33,6 @@ payload:
   - '+.oaistatic.com'
   - '+.oaiusercontent.com'
   - '+.chatgpt.com'
-  - '+.ai.com'
   - '+.x.ai'
   - '+.perplexity.ai'
   - '+.meta.ai'
