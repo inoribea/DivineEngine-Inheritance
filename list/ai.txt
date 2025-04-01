@@ -1,4 +1,5 @@
 payload:
+  - 'openrouter.ai'
   - '+.openai.com'
   - '+.openai.nooc.ink'
   - '+.cdn.auth0.com'
