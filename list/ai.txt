@@ -13,6 +13,7 @@ payload:
   - '+.ai.com'
   - '+.bard.google.com'
   - '+.gemini.google.com'
+  - 'aistudio.google.com'
   - '+.deepmind.com'
   - '+.deepmind.google'
   - '+.generativelanguage.googleapis.com'
