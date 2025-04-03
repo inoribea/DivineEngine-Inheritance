@@ -8,7 +8,7 @@ dns:
   enhanced-mode: redir-host
   listen: 0.0.0.0:7874
   nameserver:
-  - https://dns.alidns.com/dns-query
+  - quic://223.5.5.5
   fallback:
   - quic://unfiltered.adguard-dns.com
   - https://dns.cloudflare.com/dns-query
