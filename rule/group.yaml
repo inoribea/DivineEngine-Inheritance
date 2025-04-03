@@ -433,19 +433,19 @@ proxy-groups:
   - Main
   - Side
 
-  -
-    name: SEA
-    type: url-test
-    include-all-proxies: true
-    filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal"
-    exclude-filter: "通用|标准|解锁|自动"
-    url: 'http://speedtest.inoribea.moe'
-    interval: 4800
-    lazy: true
-    hidden: true
-    use:
-    - Main
-    - Side
+-
+  name: SEA
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4800
+  lazy: true
+  hidden: true
+  use:
+  - Main
+  - Side
 
 -
   name: AF
