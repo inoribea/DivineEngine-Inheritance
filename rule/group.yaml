@@ -10,8 +10,7 @@ proxy-groups:
   - Cross ⚖️
   - DIRECT
   udp: true
-  use:
-  - Main
+ 
   
 -
   name: Auto
@@ -23,8 +22,7 @@ proxy-groups:
   interval: 3600
   hidden: true
   udp: true
-  use:
-  - Main
+ 
 -
   name: "Cross ⚖️"
   type: select
@@ -109,9 +107,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)香港|hk"
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: "TW 🇹🇼"
@@ -122,9 +118,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)台湾|tw"
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: "JP 🇯🇵"
@@ -135,9 +129,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)日本|jp"
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: "KR 🇰🇷"
@@ -148,9 +140,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)韩|kr"
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: "SG 🇸🇬"
@@ -161,9 +151,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)新加坡|狮城|sg"
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: "OC 🇭🇲"
@@ -174,9 +162,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)澳大|斐济|新西兰|南极"
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: "EU 🇪🇺"
@@ -187,9 +173,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|Italy|Spain|Netherlands"
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: "US 🇺🇸"
@@ -201,9 +185,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)美国|us"
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: "RU 🇷🇺"
@@ -214,9 +196,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)俄|乌克|ru"
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: "ME 🇸🇦"
@@ -230,9 +210,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)迪拜|土耳其|sa|tr|ib"
-  use:
-  - Main
-  - Side
+ 
 
 
 -
@@ -275,9 +253,7 @@ proxy-groups:
   interval: 3000
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: RU
@@ -289,9 +265,7 @@ proxy-groups:
   interval: 3200
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: IB
@@ -303,9 +277,7 @@ proxy-groups:
   interval: 3200
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: SA
@@ -317,9 +289,7 @@ proxy-groups:
   interval: 3400
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: TR
@@ -331,9 +301,7 @@ proxy-groups:
   interval: 3200
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: JP
@@ -345,9 +313,7 @@ proxy-groups:
   interval: 3600
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: KR
@@ -359,9 +325,7 @@ proxy-groups:
   interval: 3800
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: SG
@@ -373,9 +337,7 @@ proxy-groups:
   interval: 4000
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: HK
@@ -387,9 +349,7 @@ proxy-groups:
   interval: 4200
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: TW
@@ -401,9 +361,7 @@ proxy-groups:
   interval: 4400
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: EU
@@ -415,9 +373,7 @@ proxy-groups:
   interval: 4600
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: OC
@@ -429,9 +385,7 @@ proxy-groups:
   interval: 4800
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: SEA
@@ -443,9 +397,7 @@ proxy-groups:
   interval: 4800
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: AF
@@ -457,9 +409,7 @@ proxy-groups:
   interval: 4800
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: LA
@@ -471,9 +421,7 @@ proxy-groups:
   interval: 5000
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
 
 -
   name: IS
@@ -485,9 +433,7 @@ proxy-groups:
   interval: 5200
   lazy: true
   hidden: true
-  use:
-  - Main
-  - Side
+ 
    
 -
   name: Domestic
