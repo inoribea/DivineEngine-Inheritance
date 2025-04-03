@@ -10,7 +10,7 @@ proxy-groups:
   - Cross ⚖️
   - DIRECT
   udp: true
-  filter: "&"
+  filter: "(?i)&"
   
 -
   name: Auto
