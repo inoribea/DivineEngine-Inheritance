@@ -10,8 +10,8 @@ dns:
   nameserver:
   - quic://223.5.5.5
   fallback:
-  - quic://unfiltered.adguard-dns.com
-  - https://dns.cloudflare.com/dns-query
+  - udp://94.140.14.14
+  - https://1.1.1.1/dns-query
   default-nameserver:
   - 119.29.29.29
   fallback-filter:
