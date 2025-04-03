@@ -34,7 +34,7 @@ dns:
       - 224.0.0.0/4
       - 240.0.0.0/4
       - 255.255.255.255/32
-      doMain:
+      domain:
       - "+.google.com"
       - "+.facebook.com"
       - "+.youtube.com"
