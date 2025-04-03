@@ -1,0 +1,73 @@
+#### https://wiki.metacubex.one/config
+
+##############################################################################################################################
+
+# 代理端口
+#port: 7880
+#socks-port: 7881
+#redir-port: 7891
+#tproxy-port: 7892
+#mixed-port: 7890 # HTTP(S) 和 SOCKS 代理混合端口
+
+udp: true
+allow-lan: true # 允许局域网的连接
+
+mode: Rule # 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
+geo-auto-update: false
+bind-address: "*"
+keep-alive-interval: 15
+keep-alive-idle: 600
+ipv6: true
+unified-delay: true
+listeners:
+- name: tproxy-in
+  type: tproxy
+  udp: true
+tun:
+  enable: true
+  stack: mixed
+  device: utun
+  dns-hijack:
+  - any:53
+  endpoint-independent-nat: true
+  auto-route: true
+  auto-redirect: true
+  strict-route: false # 将所有连接路由到 tun 来防止泄漏，但你的设备将无法其他设备被访问
+
+#log-level: silent # silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
+
+external-controller: '0.0.0.0:9090'
+external-controller-tls: '[::]:9443'
+secret: '31015283' 
+external-controller-cors:
+  allow-origins:
+    - "*"
+  allow-private-network: true
+tls:
+  certificate: /etc/beryl.fossa-bee.ts.net.key
+  private-key: /etc/beryl.fossa-bee.ts.net.crt
+
+profile:
+  store-selected: true
+experimental:
+  sniff-tls-sni: false
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+
+##############################################################################################################################

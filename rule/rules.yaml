@@ -1,0 +1,53 @@
+##############################################################################################################################
+
+rules:
+  - PROCESS-NAME,tailscaled,DIRECT
+  - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
+  - DOMAIN-SUFFIX,xns.one,Proxy
+  - DOMAIN-SUFFIX,nxns.link,Proxy
+  - DOMAIN-SUFFIX,bing.com,DIRECT
+  - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
+  - DOMAIN,ptest-2.ipcheck.ing,ME 🇸🇦
+  - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
+  - DOMAIN,ptest-4.ipcheck.ing,EU 🇪🇺
+  - DOMAIN,ptest-5.ipcheck.ing,US 🇺🇸
+  - DOMAIN,ptest-6.ipcheck.ing,SG 🇸🇬
+  - DOMAIN,ptest-7.ipcheck.ing,KR 🇰🇷
+  - DOMAIN,ptest-8.ipcheck.ing,JP 🇯🇵
+
+  - RULE-SET,applications,DIRECT
+  - RULE-SET,private,DIRECT
+#  - RULE-SET,reject,REJECT
+  - RULE-SET,bilibili,Cross ⚖️
+  - RULE-SET,paypal,Cross ⚖️
+  - RULE-SET,ai,AI 🤖
+  - RULE-SET,bahamut,Social 💬
+  - RULE-SET,youtube,Media 📺
+  - RULE-SET,spotify,Media 📺
+  - RULE-SET,disney,Media 📺
+  - RULE-SET,google,Service 📶
+  - RULE-SET,icloud,Service 📶
+  - RULE-SET,apple,Service 📶
+  - RULE-SET,gfw,Wall 🧱
+  - RULE-SET,proxy,Proxy
+#  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
+#  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,DIRECT
+  - RULE-SET,telegramcidr,Social 💬,no-resolve
+  - RULE-SET,twitter-cidr,Social 💬,no-resolve
+  - RULE-SET,netflix-cidr,Media 📺,no-resolve
+  - RULE-SET,cloudflare-cidr,Service 📶,no-resolve
+#  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
+  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
+  - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
+  - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
+  
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - DST-PORT,80,Others 🛰️
+  - DST-PORT,443,Others 🛰️
+  - NETWORK,udp,DIRECT
+  - MATCH,Proxy
+
+##############################################################################################################################
