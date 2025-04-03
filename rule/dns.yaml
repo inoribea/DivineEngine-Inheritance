@@ -1,70 +1,54 @@
 ##############################################################################################################################
 
 dns:
-    enable: true
-    prefer-h3: true
-    fake-ip-filter-mode: blacklist
-    ipv6: true
-    enhanced-mode: redir-host
-    listen: 0.0.0.0:7874
-    nameserver:
-    - https://dns.alidns.com/dns-query
-    fallback:
-    - quic://unfiltered.adguard-dns.com
-    - https://dns.cloudflare.com/dns-query
-    default-nameserver:
-    - 119.29.29.29
-    fallback-filter:
-      geoip: true
-      geoip-code: CN
-      ipcidr:
-      - 0.0.0.0/8
-      - 10.0.0.0/8
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 169.254.0.0/16
-      - 172.16.0.0/12
-      - 192.0.0.0/24
-      - 192.0.2.0/24
-      - 192.88.99.0/24
-      - 192.168.0.0/16
-      - 198.18.0.0/15
-      - 198.51.100.0/24
-      - 203.0.113.0/24
-      - 224.0.0.0/4
-      - 240.0.0.0/4
-      - 255.255.255.255/32
-      domain:
-      - "+.google.com"
-      - "+.facebook.com"
-      - "+.youtube.com"
-      - "+.githubusercontent.com"
-      - "+.googlevideo.com"
-      - "+.msftconnecttest.com"
-      - "+.msftncsi.com"
-  
-  profile:
-    store-selected: true
-  experimental:
-    sniff-tls-sni: false
-  sniffer:
-    enable: true
-    force-dns-mapping: true
-    parse-pure-ip: true
-    sniff:
-      HTTP:
-        ports:
-        - 80
-        - 8080-8880
-        override-destination: true
-      TLS:
-        ports:
-        - 443
-        - 8443
-      QUIC:
-        ports:
-        - 443
-        - 8443
+  enable: true
+  prefer-h3: true
+  fake-ip-filter-mode: blacklist
+  ipv6: true
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  fallback:
+  - quic://unfiltered.adguard-dns.com
+  - https://dns.cloudflare.com/dns-query
+  default-nameserver:
+  - 119.29.29.29
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 0.0.0.0/8
+    # 其余IP地址列表...
+    domain:
+    - "+.google.com"
+    # 其余域名列表...
+
+profile:
+  store-selected: true
+
+experimental:
+  sniff-tls-sni: false
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+      - 443
+      - 8443
+    QUIC:
+      ports:
+      - 443
+      - 8443
+
   
   
   ##############################################################################################################################
