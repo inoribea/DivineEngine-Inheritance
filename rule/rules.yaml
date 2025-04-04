@@ -18,6 +18,7 @@ rules:
   - RULE-SET,applications,DIRECT
   - RULE-SET,private,DIRECT
 #  - RULE-SET,reject,REJECT
+  - RULE-SET,cn,DIRECT
   - RULE-SET,bilibili,Cross ⚖️
   - RULE-SET,paypal,Cross ⚖️
   - RULE-SET,ai,AI 🤖
