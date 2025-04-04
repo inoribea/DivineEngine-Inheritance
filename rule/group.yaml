@@ -210,7 +210,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|Egypt|Yemen|Iraq|Israel|Jordan|\bsa\b|\btr\b|ib"
+  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|UAE|Egypt|Yemen|Iraq|Israel|Jordan|\bsa\b|\btr\b|ib"
 
 -
   name: "SEA 🇹🇱"
