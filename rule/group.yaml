@@ -230,11 +230,12 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg
+  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg"
 
 -
   name: "Game 🎮"
   type: select
+  udp : true  
   proxies:
   - Domestic
   - Proxy
@@ -245,7 +246,6 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)游戏|game"
-  udp : true  
 
 -
   name: "BlackHole 🧅"
