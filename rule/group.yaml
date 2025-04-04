@@ -11,6 +11,7 @@ proxy-groups:
   - DIRECT
   udp: true
   filter: "(?i)&"
+  exclude-filter: "解锁|自动|专线|回落|直连|官网|剩余|套餐|GB|Expire"
   
 -
   name: Auto
