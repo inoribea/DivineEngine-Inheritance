@@ -184,8 +184,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)美国|us"
-  exclude-filter: "Australia"
+  filter: "(?i)美国|\bus\b"
 
    
 -
@@ -209,10 +208,29 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)迪拜|土耳其|sa|tr|ib"
-  exclude-filter: "Australia"
- 
+  filter: "(?i)迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|Egypt|Yemen|Iraq|Israel|Jordan|\bsa\b|\btr\b|ib"
 
+-
+  name: "SEA 🇹🇱"
+  type: select
+  proxies:
+  - SEA
+  - SG
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal"
+
+-
+  name: "LAF 🇿🇦"
+  type: select
+  proxies:
+  - LA
+  - AF
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg
 
 -
   name: "Game 🎮"
@@ -284,7 +302,7 @@ proxy-groups:
   name: SA
   type: url-test
   include-all-proxies: true
-  filter: "(?i)迪拜|阿联|sa"
+  filter: "(?i)迪拜|阿联|\bsa\b"
   exclude-filter: "通用|标准|解锁|自动"
   url: 'http://speedtest.inoribea.moe'
   interval: 3400
@@ -296,7 +314,7 @@ proxy-groups:
   name: TR
   type: url-test
   include-all-proxies: true
-  filter: "(?i)土耳其|斯坦|tr"
+  filter: "(?i)土耳其|斯坦|\btr\b"
   exclude-filter: "通用|标准|解锁|自动|巴基斯坦|Australia"
   url: 'http://speedtest.inoribea.moe'
   interval: 3200
