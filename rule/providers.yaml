@@ -7,6 +7,13 @@ rule-providers:
 #    path: ./rule_provider/reject.yaml
 #    interval: 172800
 
+  cn:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/inoribea/DivineEngine-Inheritance@Main/list/cn.txt"
+    path: ./rule_provider/cn.yaml
+    interval: 86400
+    
   bilibili:
     type: http
     behavior: domain
