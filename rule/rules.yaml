@@ -6,7 +6,6 @@ rules:
   - DOMAIN-SUFFIX,xns.one,Proxy
   - DOMAIN-SUFFIX,nxns.link,Proxy
   - DOMAIN-SUFFIX,bing.com,DIRECT
-  - DOMAIN,cdn.jsdelivr.net,DIRECT
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
   - DOMAIN,ptest-2.ipcheck.ing,ME 🇸🇦
   - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
