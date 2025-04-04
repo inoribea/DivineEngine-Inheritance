@@ -185,7 +185,8 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)美国|us"
- 
+  exclude-filter: "Australia"
+
    
 -
   name: "RU 🇷🇺"
@@ -196,7 +197,6 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)俄|乌克|ru"
- 
    
 -
   name: "ME 🇸🇦"
@@ -210,6 +210,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)迪拜|土耳其|sa|tr|ib"
+  exclude-filter: "Australia"
  
 
 
@@ -248,7 +249,7 @@ proxy-groups:
   type: url-test
   include-all-proxies: true
   filter: "(?i)美国|us"
-  exclude-filter: "通用|标准|解锁|自动"
+  exclude-filter: "通用|标准|解锁|自动|Australia"
   url: 'http://speedtest.inoribea.moe'
   interval: 3000
   lazy: true
@@ -296,7 +297,7 @@ proxy-groups:
   type: url-test
   include-all-proxies: true
   filter: "(?i)土耳其|斯坦|tr"
-  exclude-filter: "通用|标准|解锁|自动|巴基斯坦"
+  exclude-filter: "通用|标准|解锁|自动|巴基斯坦|Australia"
   url: 'http://speedtest.inoribea.moe'
   interval: 3200
   lazy: true
