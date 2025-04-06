@@ -3,6 +3,8 @@
 rules:
   - PROCESS-NAME,tailscaled,DIRECT
   - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
+  - IP-CIDR,127.0.0.0/8,DIRECT
+
   - DOMAIN-SUFFIX,xns.one,Proxy
   - DOMAIN-SUFFIX,nxns.link,Proxy
   - DOMAIN-SUFFIX,bing.com,DIRECT
