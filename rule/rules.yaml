@@ -2,6 +2,7 @@
 
 rules:
   - PROCESS-NAME,tailscaled,DIRECT
+  - PROCESS-NAME,qbittorrent-nox,Service 📶
   - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
 
   - DOMAIN-SUFFIX,xns.one,Proxy
@@ -49,6 +50,7 @@ rules:
   - GEOIP,CN,DIRECT
   - DST-PORT,80,Others 🛰️
   - DST-PORT,443,Others 🛰️
+  - DST-PORT,60070,DIRECT
   - NETWORK,udp,DIRECT
   - MATCH,Proxy
 
