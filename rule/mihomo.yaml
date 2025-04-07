@@ -11,19 +11,40 @@
 
 udp: true
 allow-lan: true # 允许局域网的连接
-
 mode: Rule # 规则模式：Rule（规则） / Global（全局代理）/ Direct（全局直连）
 geo-auto-update: false
 bind-address: "*"
 keep-alive-interval: 15
 keep-alive-idle: 600
-ipv6: true
 unified-delay: true
+
 listeners:
+- name: mixed-in
+  type: mixed
+  listen: 0.0.0.0
+- name: http-in
+  type: http
+  listen: 0.0.0.0
+- name: sock5-in
+  type: socks
+  listen: 0.0.0.0
+- name: redir-in
+  type: redir
+  listen: 0.0.0.0
 - name: tproxy-in
   type: tproxy
   listen: 0.0.0.0
-  udp: true
+- name: tun-in
+  type: tun
+  dns-hijack:
+      - 0.0.0.0:53 # 需要劫持的 DNS
+    # auto-detect-interface: false # 自动识别出口网卡
+    # auto-route: false # 配置路由表
+    # mtu: 9000 # 最大传输单元
+    inet4-address: # 必须手动设置ipv4地址段
+      - 198.19.0.1/30
+    inet6-address: # 必须手动设置ipv6地址段
+      - "fdfe:dcba:9877::1/126"
 tun:
   enable: true
   stack: mixed
@@ -33,7 +54,8 @@ tun:
   endpoint-independent-nat: true
   auto-route: true
   auto-redirect: true
-  strict-route: false # 将所有连接路由到 tun 来防止泄漏，但你的设备将无法其他设备被访问
+  exclude-interface:
+  - tailscale0
 
 #log-level: silent # silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
 
