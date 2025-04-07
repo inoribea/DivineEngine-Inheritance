@@ -20,6 +20,11 @@ keep-alive-idle: 600
 unified-delay: true
 interface-name: br-lan
 
+listeners:
+- name: socks-in
+  type: socks
+  listen: 0.0.0.0
+
 tun:
   enable: true
   stack: mixed
