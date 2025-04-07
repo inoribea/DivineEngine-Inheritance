@@ -18,6 +18,7 @@ bind-address: '*'
 keep-alive-interval: 15
 keep-alive-idle: 600
 unified-delay: true
+interface-name: br-lan
 
 tun:
   enable: true
