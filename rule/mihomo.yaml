@@ -22,13 +22,14 @@ unified-delay: true
 listeners:
 - name: tproxy-in
   type: tproxy
+  listen: 0.0.0.0
   udp: true
 tun:
   enable: true
   stack: mixed
   device: utun
   dns-hijack:
-  - any:53
+  - 0.0.0.0:53
   endpoint-independent-nat: true
   auto-route: true
   auto-redirect: true
