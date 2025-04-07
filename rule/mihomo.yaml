@@ -37,15 +37,10 @@ tun:
 #log-level: silent # silent / info / warning / error / debug。级别越高日志输出量越大，越倾向于调试，若需要请自行开启。
 
 external-controller: '0.0.0.0:9090'
-external-controller-tls: '[::]:9443'
-secret: '31015283' 
 external-controller-cors:
   allow-origins:
-    - "*"
+    - '*'
   allow-private-network: true
-tls:
-  certificate: /etc/beryl.fossa-bee.ts.net.key
-  private-key: /etc/beryl.fossa-bee.ts.net.crt
 
 profile:
   store-selected: true
