@@ -9,32 +9,33 @@
 #redir-port: 7891
 #tproxy-port: 7892
 
-#ipv6: true
 udp: true
-allow-lan: true
+ipv6: true
+allow-lan: true 
 mode: Rule
 geo-auto-update: false
-bind-address: '*'
+bind-address: "*"
 keep-alive-interval: 15
 keep-alive-idle: 600
 unified-delay: true
-interface-name: br-lan
 
 listeners:
-- name: socks-in
-  type: socks
-  listen: 0.0.0.0
+  - name: tproxy-in
+    type: tproxy
+    udp: true
 
 tun:
   enable: true
   stack: mixed
   device: utun
+  dns-hijack:
+    - any:53
   endpoint-independent-nat: true
-  auto-route: true
-  auto-redirect: true
-  auto-detect-interface: true
-  exclude-interface:
-  - tailscale0
+  auto-route: false
+  auto-redirect: false
+  strict-route: false
+  auto-detect-interface: false
+
 external-controller: '0.0.0.0:9090'
 external-controller-cors:
   allow-origins:
@@ -44,23 +45,4 @@ profile:
   store-selected: true
 experimental:
   sniff-tls-sni: false
-sniffer:
-  enable: true
-  force-dns-mapping: true
-  parse-pure-ip: true
-  sniff:
-    HTTP:
-      ports:
-        - 80
-        - 8080-8880
-      override-destination: true
-    TLS:
-      ports:
-        - 443
-        - 8443
-    QUIC:
-      ports:
-        - 443
-        - 8443
-
 ##############################################################################################################################
