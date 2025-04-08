@@ -32,6 +32,7 @@ tun:
   endpoint-independent-nat: true
   auto-route: true
   auto-redirect: true
+  auto-detect-interface: true
   exclude-interface:
   - tailscale0
 external-controller: '0.0.0.0:9090'
