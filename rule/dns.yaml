@@ -6,7 +6,7 @@ dns:
   fake-ip-filter-mode: blacklist
   ipv6: true
   enhanced-mode: fake-ip
-  listen: 0.0.0.0:7874
+  listen: 0.0.0.0:7853
   nameserver:
   - quic://223.5.5.5
   fallback:
