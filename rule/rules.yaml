@@ -2,7 +2,6 @@
 
 rules:
   - PROCESS-NAME,tailscaled,DIRECT
-  - PROCESS-NAME,qbittorrent-nox,Service 📶
   - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
 
   - DOMAIN-SUFFIX,xns.one,Proxy
