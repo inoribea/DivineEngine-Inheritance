@@ -1,3 +1,2 @@
 payload:
   - '+.189.cn'
-  - 'cdn.jsdelivr.net'
