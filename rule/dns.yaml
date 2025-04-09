@@ -9,6 +9,7 @@ dns:
   listen: '[::]:7853'
   nameserver:
   - quic://223.5.5.5
+  - https://doh.pub/dns-query
   fallback:
   - udp://94.140.14.14
   - https://1.1.1.1/dns-query
