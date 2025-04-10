@@ -2,7 +2,6 @@
 
 rules:
   - PROCESS-NAME,tailscaled,DIRECT
-  - IN-USER,nox,Service 📶
   - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
 
   - DOMAIN-SUFFIX,xns.one,Proxy
@@ -17,7 +16,7 @@ rules:
   - DOMAIN,ptest-7.ipcheck.ing,KR 🇰🇷
   - DOMAIN,ptest-8.ipcheck.ing,JP 🇯🇵
 
-  - RULE-SET,applications,Cross ⚖️
+  - RULE-SET,applications,Service 📶
   - RULE-SET,private,DIRECT
 #  - RULE-SET,reject,REJECT
   - RULE-SET,cn,DIRECT
