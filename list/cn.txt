@@ -1,3 +1,5 @@
 payload:
   - '+.189.cn'
   - '+.superpre.pro'
+  - 'api.o3.fan'
+  - 'api.nekoapi.com'
