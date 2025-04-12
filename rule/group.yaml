@@ -65,12 +65,14 @@ proxy-groups:
   - Domestic
 
 -
-  name: "AI 🤖"
+  name: "AI ✨"
   type: select
   proxies:
   - Proxy
   - US 🇺🇸
   - JP 🇯🇵
+  - EU 🇪🇺
+  - OC 🇭🇲
   - Domestic
 
 -
