@@ -42,6 +42,13 @@ rule-providers:
     url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/ai.txt"
     path: ./rule_provider/ai.yaml
     interval: 86400
+    
+  astro:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/astro.txt"
+    path: ./rule_provider/astro.yaml
+    interval: 86400
 
   disney:
     type: http
