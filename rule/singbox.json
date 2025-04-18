@@ -62,10 +62,10 @@
   "experimental": {
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
-      "external_ui": "",
-      "external_ui_download_url": "",
+      "external_ui": "ui",
+      "external_ui_download_url": "https://ghproxy.cn/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip",
       "external_ui_download_detour": "direct",
-      "secret": "ID_xdzex4n4",
+      "secret": "123456",
       "default_mode": "rule",
       "access_control_allow_origin": [
         "*"
