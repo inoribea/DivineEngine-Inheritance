@@ -52,7 +52,6 @@
       ],
       "disable_cache": false,
       "disable_expire": false,
-      "dependent_cache": true,
       "final": "Remote-DNS"
     },
     "route": {
