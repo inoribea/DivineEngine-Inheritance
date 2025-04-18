@@ -278,13 +278,6 @@
           "format": "binary",
           "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/telegram.srs",
           "download_detour": "direct"
-        },
-        {
-          "tag": "youtube_domain",
-          "type": "remote",
-          "format": "binary",
-          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/youtube.srs",
-          "download_detour": "direct"
         }
       ],
       "final": "final",
