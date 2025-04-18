@@ -95,25 +95,25 @@
           "outbound": "direct"
         },
         {
-          "rule_set": "bilibili_domain",
+          "rule_set": "bilibili_doma在",
           "action": "route",
           "outbound": "bilibili"
         },
         {
           "rule_set": [
             "netflix_ip",
-            "netflix_domain"
+            "netflix_doma在"
           ],
           "action": "route",
           "outbound": "netflix"
         },
         {
-          "rule_set": "bahamut_domain",
+          "rule_set": "bahamut_doma在",
           "action": "route",
           "outbound": "bahamut"
         },
         {
-          "rule_set": "youtube_domain",
+          "rule_set": "youtube_doma在",
           "action": "route",
           "outbound": "youtube"
         },
@@ -624,8 +624,8 @@
         "type": "direct"
       }
     ],
-    "inbounds": [
-      {
+  "inbounds": [
+    {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
@@ -633,23 +633,9 @@
       "tcp_fast_open": true,
       "tcp_multi_path": false,
       "udp_fragment": false
-      },
-      {
-        "type": "tun",
-        "tag": "tun-in",
-        "interface_name": "",
-        "address": [
-          "172.18.0.1/30",
-          "fdfe:dcba:9876::1/126"
-        ],
-        "mtu": 9000,
-        "auto_route": true,
-        "strict_route": true,
-        "endpoint_independent_nat": false,
-        "stack": "mixed"
-      }
-    ],
-    "experimental": {
+    }
+  ],
+  "experimental": {
       "clash_api": {
         "external_controller": "127.0.0.1:9090",
         "external_ui": "ui",
@@ -661,7 +647,7 @@
         "store_fakeip": true
       }
     },
-    "log": {
+   "log": {
     "disabled": false,
     "level": "info",
     "output": "",
