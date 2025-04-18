@@ -142,6 +142,13 @@
       {
         "action": "route",
         "rule_set": [
+          "GeoSite-CN"
+        ],
+        "outbound": "direct"
+      },
+      {
+        "action": "route",
+        "rule_set": [
           "GeoLocation-!CN"
         ],
         "outbound": "all"
