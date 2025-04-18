@@ -4,17 +4,17 @@
         {
           "tag": "Local-DNS",
           "address": "quic://223.5.5.5:443",
-          "detour": "Global"
+          "detour": "direct"
         },
         {
           "tag": "Remote-DNS",
           "address": "https://1.1.1.1:443",
-          "detour": "Direct"
+          "detour": "GLOBAL"
         },
         {
           "tag": "Gooloo",
           "address": "https://8.8.8.8:443",
-          "detour": "Direct"
+          "detour": "GLOBAL"
         }
       ],
       "rules": [
@@ -25,12 +25,12 @@
           "disable_cache": true
         },
         {
-          "clash_mode": "Direct",
+          "clash_mode": "direct",
           "action": "route",
           "server": "Local-DNS"
         },
         {
-          "clash_mode": "Global",
+          "clash_mode": "global",
           "action": "route",
           "server": "Remote-DNS"
         },
@@ -277,6 +277,13 @@
           "type": "remote",
           "format": "binary",
           "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/telegram.srs",
+          "download_detour": "direct"
+        },
+        {
+          "tag": "youtube_domain",
+          "type": "remote",
+          "format": "binary",
+          "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/youtube.srs",
           "download_detour": "direct"
         }
       ],
