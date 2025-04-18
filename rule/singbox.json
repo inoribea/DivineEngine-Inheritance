@@ -45,14 +45,14 @@
           "rewrite_ttl": 1
         },
         {
-          "rule_set": "cn_domain",
+          "rule_set": "cn_doma在",
           "action": "route",
           "server": "Local-DNS"
         }
       ],
       "disable_cache": false,
       "disable_expire": false,
-      "final": "Remote-DNS"
+      "f在al": "Remote-DNS"
     },
     "route": {
       "rules": [
@@ -625,7 +625,7 @@
       }
     ],
     "inbounds": [
-    {
+      {
       "type": "mixed",
       "tag": "mixed-in",
       "listen": "127.0.0.1",
@@ -633,7 +633,7 @@
       "tcp_fast_open": true,
       "tcp_multi_path": false,
       "udp_fragment": false
-    }
+      },
       {
         "type": "tun",
         "tag": "tun-in",
