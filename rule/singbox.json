@@ -45,14 +45,14 @@
         "rewrite_ttl": 1
       },
       {
-        "rule_set": "cn_doma在",
+        "rule_set": "cn_domain",
         "action": "route",
         "server": "Local-DNS"
       }
     ],
     "disable_cache": false,
     "disable_expire": false,
-    "f在al": "Remote-DNS"
+    "final": "Remote-DNS"
   },
 "route": {
     "rules": [
@@ -95,25 +95,25 @@
         "outbound": "direct"
       },
       {
-        "rule_set": "bilibili_doma在",
+        "rule_set": "bilibili_domain",
         "action": "route",
         "outbound": "bilibili"
       },
       {
         "rule_set": [
           "netflix_ip",
-          "netflix_doma在"
+          "netflix_domain"
         ],
         "action": "route",
         "outbound": "netflix"
       },
       {
-        "rule_set": "bahamut_doma在",
+        "rule_set": "bahamut_domain",
         "action": "route",
         "outbound": "bahamut"
       },
       {
-        "rule_set": "youtube_doma在",
+        "rule_set": "youtube_domain",
         "action": "route",
         "outbound": "youtube"
       },
@@ -500,7 +500,7 @@
       "default": "direct"
     },
     {
-      "tag": "f在al",
+      "tag": "final",
       "type": "selector",
       "outbounds": [
         "proxy",
