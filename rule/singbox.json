@@ -49,13 +49,6 @@
       {
         "action": "route",
         "rule_set": [
-          "GeoSite-CN"
-        ],
-        "server": "Local-DNS"
-      },
-      {
-        "action": "route",
-        "rule_set": [
           "GeoLocation-!CN"
         ],
         "server": "Remote-DNS"
@@ -129,13 +122,6 @@
         "action": "route",
         "rule_set": [
           "GeoSite-Private"
-        ],
-        "outbound": "direct"
-      },
-      {
-        "action": "route",
-        "rule_set": [
-          "GeoSite-CN"
         ],
         "outbound": "direct"
       },
