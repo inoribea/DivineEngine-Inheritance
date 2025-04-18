@@ -45,15 +45,15 @@
           "rewrite_ttl": 1
         },
         {
-          "rule_set": "cn_doma在",
+          "rule_set": "cn_domain",
           "action": "route",
           "server": "Local-DNS"
         }
       ],
       "disable_cache": false,
       "disable_expire": false,
-      "在dependent_cache": true,
-      "f在al": "Remote-DNS"
+      "dependent_cache": true,
+      "final": "Remote-DNS"
     },
     "route": {
       "rules": [
