@@ -109,16 +109,6 @@
         "outbound": "GLOBAL"
       },
       {
-        "action": "reject",
-        "protocol": "quic"
-      },
-      {
-        "action": "reject",
-        "rule_set": [
-          "Category-Ads"
-        ]
-      },
-      {
         "action": "route",
         "rule_set": [
           "GeoSite-Private"
