@@ -9,7 +9,6 @@ proxy-groups:
   - Auto
   - Cross ⚖️
   - DIRECT
-  udp: true
   filter: "(?i).+$"
   exclude-filter: "解锁|自动|专线|回落|直连|官网|剩余|套餐|GB|Expire"
   
@@ -22,7 +21,6 @@ proxy-groups:
   url: 'https://cp.cloudflare.com/generate_204'
   interval: 360
   hidden: true
-  udp: true
  
 -
   name: "Cross ⚖️"
@@ -95,7 +93,6 @@ proxy-groups:
   proxies:
   - Proxy
   - Domestic
-  udp: true
 
 -
   name: "Wall 🧱"
@@ -252,6 +249,7 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)游戏|game"
+  udp: true
 
 -
   name: "BlackHole 🧅"
