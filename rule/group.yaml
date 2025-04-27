@@ -17,7 +17,7 @@ proxy-groups:
   name: Auto
   type: url-test
   include-all-proxies: true
-  filter: "日本|韩|台湾|香港|新加坡|jp|kr|tw|hk|sg"
+  filter: "(?i)🏠|⚪|🔴|🔵|🟢"
   exclude-filter: "解锁|自动|专线|回落|直连|官网|剩余|套餐|GB|Expire"
   url: 'https://cp.cloudflare.com/generate_204'
   interval: 360
