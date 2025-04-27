@@ -249,7 +249,6 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)游戏|game"
-  udp: true
 
 -
   name: "BlackHole 🧅"
