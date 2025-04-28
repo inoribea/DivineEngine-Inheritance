@@ -533,7 +533,7 @@
       "type": "selector",
       "outbounds": [
         "proxy",
-        "direct",
+        "direct"
       ],
       "default": "proxy"
     },
