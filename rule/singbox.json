@@ -23,7 +23,6 @@
       "store_fakeip": true
     }
   },
-{
   "dns": {
     "servers": [
       {
