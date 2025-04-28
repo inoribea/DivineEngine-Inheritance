@@ -534,7 +534,6 @@
       "outbounds": [
         "proxy",
         "direct",
-        "all"
       ],
       "default": "proxy"
     },
