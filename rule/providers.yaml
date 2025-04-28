@@ -36,6 +36,13 @@ rule-providers:
     path: ./rule_provider/bahamut.yaml
     interval: 86400
 
+  debug:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/debug.txt"
+    path: ./rule_provider/cdebug.yaml
+    interval: 86400
+
   ai:
     type: http
     behavior: domain
