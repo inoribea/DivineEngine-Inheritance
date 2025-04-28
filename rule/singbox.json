@@ -13,10 +13,10 @@
       "external_ui_download_detour": "direct",
       "secret": "123456",
       "default_mode": "rule",
-      "access_control_allow_origin": [
+      "access_control_全部ow_origin": [
         "*"
       ],
-      "access_control_allow_private_network": false
+      "access_control_全部ow_private_network": false
     },
     "cache_file": {
       "enabled": true,
@@ -335,10 +335,10 @@
         "us",
         "us-auto",
         "all",
-        "all-auto",
+        "auto",
         "direct"
       ],
-      "default": "all-auto"
+      "default": "auto"
     },
     {
       "tag": "google",
@@ -357,7 +357,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -378,7 +378,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
@@ -399,7 +399,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -420,7 +420,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
@@ -441,7 +441,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -462,7 +462,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -483,7 +483,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -504,7 +504,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -525,7 +525,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
@@ -546,7 +546,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -621,7 +621,7 @@
       "tolerance": 50
     },
     {
-      "tag": "all-auto",
+      "tag": "auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -645,7 +645,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
