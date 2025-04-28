@@ -1,7 +1,7 @@
 ##############################################################################################################################
 
 rules:
-  - PROCESS-NAME,tailscaled,DIRECT
+  - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,PASS
 
   - DOMAIN-SUFFIX,xns.one,Proxy
