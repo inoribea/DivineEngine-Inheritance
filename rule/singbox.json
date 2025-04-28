@@ -182,7 +182,7 @@
         }
     ],
     "auto_detect_interface": true,
-    "final": "全部-auto"
+    "final": "all-auto"
   },
   "outbounds": [
     {
@@ -199,11 +199,11 @@
         "sg-auto",
         "us",
         "us-auto",
-        "全部",
-        "全部-auto",
+        "all",
+        "all-auto",
         "direct"
       ],
-      "default": "全部-auto"
+      "default": "all-auto"
     },
     {
       "tag": "google",
@@ -221,8 +221,8 @@
         "sg-auto",
         "us",
         "us-auto",
-        "全部",
-        "全部-auto"
+        "all",
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -242,8 +242,8 @@
         "sg-auto",
         "us",
         "us-auto",
-        "全部",
-        "全部-auto"
+        "all",
+        "all-auto"
       ],
       "default": "direct"
     },
