@@ -33,7 +33,7 @@
       },
       {
         "tag": "ali",
-        "type": "tls",
+        "type": "udp",
         "server": "223.5.5.5",
         "detour": "direct"
       },
