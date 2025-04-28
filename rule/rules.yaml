@@ -21,6 +21,7 @@ rules:
   - RULE-SET,cn,DIRECT
   - RULE-SET,bilibili,Cross ⚖️
   - RULE-SET,paypal,Cross ⚖️
+  - RULE-SET,debug,Proxy
   - RULE-SET,ai,AI ✨
   - RULE-SET,astro,AI ✨
   - RULE-SET,bahamut,Social 💬
