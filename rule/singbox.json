@@ -16,11 +16,6 @@
         "tag": "cf",
         "address": "udp://1.1.1.1",
         "detour": "proxy"
-      },
-      {
-        "tag": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
       }
     ],
     "rules": [
@@ -32,7 +27,7 @@
       {
         "clash_mode": "Global",
         "action": "route",
-        "server": "fakeip"
+        "server": "cf"
       },
       {
         "query_type": "HTTPS",
@@ -44,7 +39,7 @@
           "AAAA"
         ],
         "action": "route",
-        "server": "fakeip",
+        "server": "cf",
         "rewrite_ttl": 1
       },
       {
