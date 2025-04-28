@@ -182,7 +182,7 @@
         }
     ],
     "auto_detect_interface": true,
-    "final": "all-auto"
+    "final": "全部-auto"
   },
   "outbounds": [
     {
@@ -199,11 +199,11 @@
         "sg-auto",
         "us",
         "us-auto",
-        "all",
-        "all-auto",
+        "全部",
+        "全部-auto",
         "direct"
       ],
-      "default": "all-auto"
+      "default": "全部-auto"
     },
     {
       "tag": "google",
@@ -221,8 +221,8 @@
         "sg-auto",
         "us",
         "us-auto",
-        "all",
-        "all-auto"
+        "全部",
+        "全部-auto"
       ],
       "default": "proxy"
     },
@@ -242,8 +242,8 @@
         "sg-auto",
         "us",
         "us-auto",
-        "all",
-        "all-auto"
+        "全部",
+        "全部-auto"
       ],
       "default": "direct"
     },
@@ -264,7 +264,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -285,7 +285,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
@@ -306,7 +306,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -327,7 +327,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -348,7 +348,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -369,7 +369,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -390,7 +390,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
@@ -411,7 +411,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -486,7 +486,7 @@
       "tolerance": 50
     },
     {
-      "tag": "all-auto",
+      "tag": "auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -510,7 +510,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
