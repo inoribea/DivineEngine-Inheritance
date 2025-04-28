@@ -2,7 +2,7 @@
 
 rules:
   - PROCESS-NAME,tailscaled,DIRECT
-  - IP-SUFFIX,154.16.183.43/24,REJECT-DROP
+  - DST-PORT,3479,PASS
 
   - DOMAIN-SUFFIX,xns.one,Proxy
   - DOMAIN-SUFFIX,nxns.link,Proxy
