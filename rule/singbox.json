@@ -16,7 +16,7 @@
         "tag": "cf",
         "address": "udp://1.1.1.1",
         "detour": ""proxy"
-      }
+      }，
       {
         "tag": "fakeip",
         "type": "fakeip",
