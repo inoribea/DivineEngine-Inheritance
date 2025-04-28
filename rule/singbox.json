@@ -182,7 +182,7 @@
         }
     ],
     "auto_detect_interface": true,
-    "final": "all-auto"
+    "final": "auto"
   },
   "outbounds": [
     {
@@ -200,10 +200,10 @@
         "us",
         "us-auto",
         "all",
-        "all-auto",
+        "auto",
         "direct"
       ],
-      "default": "all-auto"
+      "default": "auto"
     },
     {
       "tag": "google",
@@ -222,7 +222,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "proxy"
     },
@@ -243,7 +243,7 @@
         "us",
         "us-auto",
         "all",
-        "all-auto"
+        "auto"
       ],
       "default": "direct"
     },
