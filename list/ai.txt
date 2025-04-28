@@ -60,6 +60,3 @@ payload:
   - '+.mon.zijieapi.com'
   - '+.lf-cdn.marscode.com'
   - '+.abtestvm.bytedance.com'
-#proxy
-  - 'linux.do'
-  - 'cdn.jsdelivr.net'
