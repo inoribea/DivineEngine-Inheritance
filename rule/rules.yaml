@@ -36,7 +36,6 @@ rules:
 #  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
 #  - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
-  - RULE-SET,cncidr,DIRECT
   - RULE-SET,telegramcidr,Social 💬,no-resolve
   - RULE-SET,twitter-cidr,Social 💬,no-resolve
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
