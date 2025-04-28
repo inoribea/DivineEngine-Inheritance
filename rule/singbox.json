@@ -5,52 +5,6 @@
     "output": "",
     "timestamp": true
   },
-  "dns": {
-    "servers": [
-      {
-        "tag": "ali",
-        "address": "udp://223.5.5.5",
-        "detour": "direct"
-      },
-      {
-        "tag": "cf",
-        "address": "udp://1.1.1.1",
-        "detour": "proxy"
-      }
-    ],
-    "rules": [
-      {
-        "clash_mode": "Direct",
-        "action": "route",
-        "server": "ali"
-      },
-      {
-        "clash_mode": "Global",
-        "action": "route",
-        "server": "cf"
-      },
-      {
-        "query_type": "HTTPS",
-        "action": "reject"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "action": "route",
-        "server": "cf",
-        "rewrite_ttl": 1
-      },
-      {
-        "rule_set": "cn_domain",
-        "action": "route",
-        "server": "ali"
-      }
-    ],
-    "final": "cf",
-    "independent_cache": true
-  },
   "experimental": {
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
@@ -65,10 +19,68 @@
       "access_control_allow_private_network": false
     }
   },
-  "route": {
-    "default_domain_resolver": {
-      "server": "ali"
+  "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
     },
+    "servers": [
+      {
+        "tag": "cf",
+        "address": "udp:1.1.1.1",
+        "detour": "proxy"
+      },
+      {
+        "tag": "ali",
+        "address": "https://223.5.5.5/dns-query",
+        "detour": "direct"
+      },
+      {
+        "tag": "fakeip",
+        "address": "fakeip"
+      }
+    ],
+    "rules": [
+      {
+        "outbound": "any",
+        "action": "route",
+        "server": "ali",
+        "disable_cache": true
+      },
+      {
+        "clash_mode": "Direct",
+        "action": "route",
+        "server": "ali"
+      },
+      {
+        "clash_mode": "Global",
+        "action": "route",
+        "server": "fakeip"
+      },
+      {
+        "query_type": "HTTPS",
+        "action": "reject"
+      },
+      {
+        "query_type": [
+          "A",
+          "AAAA"
+        ],
+        "action": "route",
+        "server": "fakeip",
+        "rewrite_ttl": 1
+      },
+      {
+        "rule_set": "cn_domain",
+        "action": "route",
+        "server": "ali"
+      }
+    ],
+    "final": "cf",
+    "independent_cache": true
+  },
+  "route": {
     "rules": [
       {
         "action": "sniff",
@@ -662,4 +674,3 @@
     }
   ]
 }
-
