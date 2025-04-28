@@ -11,7 +11,6 @@
       "external_ui": "ui",
       "external_ui_download_url": "https://ghproxy.cn/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip",
       "external_ui_download_detour": "direct",
-      "secret": "123456",
       "default_mode": "rule",
       "access_control_allow_origin": [
         "*"
