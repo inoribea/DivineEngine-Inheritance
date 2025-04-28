@@ -24,27 +24,34 @@
     }
   },
   "dns": {
+    "fakeip": {
+      "enabled": true,
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
+    },
     "servers": [
       {
         "tag": "cf",
-        "type": "udp",
-        "server": "1.1.1.1",
+        "address": "1.1.1.1",
         "detour": "proxy"
       },
       {
         "tag": "ali",
-        "type": "tls",
-        "server": "223.5.5.5",
+        "address": "tps://223.5.5.5",
         "detour": "direct"
       },
       {
         "tag": "fakeip",
-        "type": "fakeip",
-        "inet4_range": "198.18.0.0/15",
-        "inet6_range": "fc00::/18"
+        "address": "fakeip"
       }
     ],
     "rules": [
+      {
+        "outbound": "any",
+        "action": "route",
+        "server": "ali",
+        "disable_cache": true
+      },
       {
         "clash_mode": "Direct",
         "action": "route",
@@ -78,9 +85,6 @@
     "independent_cache": true
   },
   "route": {
-    "default_domain_resolver": {
-      "server": "ali"
-    },
     "rules": [
       {
         "action": "sniff",
@@ -153,7 +157,7 @@
         "mode": "and",
         "rules": [
           {
-            "rule_set": "_domain"
+            "rule_set": "proxy_domain"
           },
           {
             "invert": true,
@@ -331,10 +335,10 @@
         "us",
         "us-auto",
         "all",
-        "auto",
+        "all-auto",
         "direct"
       ],
-      "default": "auto"
+      "default": "all-auto"
     },
     {
       "tag": "google",
@@ -353,7 +357,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -374,7 +378,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "direct"
     },
@@ -395,7 +399,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -416,7 +420,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "direct"
     },
@@ -437,7 +441,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -458,7 +462,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -479,7 +483,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -500,7 +504,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -521,7 +525,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "direct"
     },
@@ -542,7 +546,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "proxy"
     },
@@ -617,7 +621,7 @@
       "tolerance": 50
     },
     {
-      "tag": "auto",
+      "tag": "all-auto",
       "type": "urltest",
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
@@ -641,7 +645,7 @@
         "us",
         "us-auto",
         "all",
-        "auto"
+        "all-auto"
       ],
       "default": "direct"
     },
