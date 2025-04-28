@@ -189,7 +189,7 @@
           "google_domain"
         ],
         "action": "route",
-        "outbound": "cf"
+        "outbound": "proxy"
       },
       {
         "rule_set": [
