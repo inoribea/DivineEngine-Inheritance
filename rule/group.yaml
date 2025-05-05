@@ -37,7 +37,7 @@ proxy-groups:
   - US 🇺🇸
   - EU 🇪🇺
   - RU 🇷🇺
-  - ME 🇸🇦
+  - MEF 🇸🇦
   - OC 🇭🇲
   - SEA 🇹🇱
   - LAF 🇿🇦
@@ -202,28 +202,27 @@ proxy-groups:
   filter: "(?i)俄|乌克|ru"
    
 -
-  name: "ME 🇸🇦"
+  name: "MEF 🇸🇦"
   type: select
   proxies:
   - SA
   - IS
   - TR
-  - IB
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|UAE|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |ib"
+  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|UAE|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria"
 
 -
   name: "SEA 🇹🇱"
   type: select
   proxies:
   - SEA
-  - SG
+  - IB
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|Mongolia"
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia"
 
 -
   name: "LAF 🇿🇦"
@@ -246,7 +245,7 @@ proxy-groups:
   - US 🇺🇸
   - JP 🇯🇵
   - KR 🇰🇷
-  - ME 🇸🇦
+  - MEF 🇸🇦
   - REJECT
   include-all-proxies: true
   filter: "(?i)游戏|game"
