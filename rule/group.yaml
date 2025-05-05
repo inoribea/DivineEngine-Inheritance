@@ -177,7 +177,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|Italy|Spain|Netherlands"
+  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|匈牙利|卢森堡|Germany|France|United Kingdom|Italy|Spain|Netherlands|Hungary|Luxembourg"
  
 
 -
@@ -188,7 +188,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)美国|us |USA"
+  filter: "(?i)美国|加拿大|us |USA|Canada"
 
    
 -
