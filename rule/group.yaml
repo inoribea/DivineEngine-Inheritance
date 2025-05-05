@@ -111,7 +111,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)香港|hk"
+  filter: "(?i)香港|澳门|hk|Macao"
  
    
 -
@@ -318,7 +318,7 @@ proxy-groups:
   name: TR
   type: url-test
   include-all-proxies: true
-  filter: "(?i)土耳其|斯坦|tr "
+  filter: "(?i)土耳其|斯坦|tr |tr-"
   exclude-filter: "通用|标准|解锁|自动|巴基斯坦|Australia"
   url: 'http://speedtest.inoribea.moe'
   interval: 3200
@@ -390,7 +390,7 @@ proxy-groups:
   name: EU
   type: url-test
   include-all-proxies: true
-  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|Italy|Spain|Netherlands"
+  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|UK|Italy|Spain|Netherlands"
   exclude-filter: "通用|标准|解锁|自动"
   url: 'http://speedtest.inoribea.moe'
   interval: 4600
