@@ -8,7 +8,7 @@ rules:
   - DOMAIN-SUFFIX,nxns.link,Proxy
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
-  - DOMAIN,ptest-2.ipcheck.ing,ME 🇸🇦
+  - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
   - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
   - DOMAIN,ptest-4.ipcheck.ing,EU 🇪🇺
   - DOMAIN,ptest-5.ipcheck.ing,US 🇺🇸
