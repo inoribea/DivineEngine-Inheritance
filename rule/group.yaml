@@ -19,7 +19,7 @@ proxy-groups:
   include-all-proxies: true
   filter: "(?i)🏠|⚪|🔴|🔵|🟢"
   exclude-filter: "解锁|自动|专线|回落|直连|官网|剩余|套餐|GB|Expire"
-  url: 'https://cp.cloudflare.com/generate_204'
+  url: 'http://speedtest.inoribea.moe'
   interval: 360
   hidden: true
   udp-over-tcp: true
