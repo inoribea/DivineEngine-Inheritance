@@ -5,6 +5,7 @@ rules:
   - DST-PORT,3479,Domestic
 
   - DOMAIN-SUFFIX,xns.one,Proxy
+  - DOMAIN-SUFFIX,nxns.link,DIRECT
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
