@@ -39,7 +39,6 @@ rules:
   - RULE-SET,telegramcidr,Social 💬,no-resolve
   - RULE-SET,twitter-cidr,Social 💬,no-resolve
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
-  - RULE-SET,cloudflare-cidr,Cross ⚖️,no-resolve
 #  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
   - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
   - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
