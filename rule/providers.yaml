@@ -188,15 +188,6 @@ rule-providers:
     path: ./mrs/geoip/netflix.mrs
     interval: 172800
 
-
-  cloudflare-cidr: 
-    type: http
-    behavior: ipcidr
-    format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/cloudflare.mrs"
-    path: ./mrs/geoip/cloudflare.mrs
-    interval: 177800
-
   tor-cidr: 
     type: http
     behavior: ipcidr
