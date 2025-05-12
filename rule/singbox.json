@@ -637,7 +637,8 @@
       "default": "direct"
     },
     {
-      "tag": "direct"
+      "tag": "direct",
+      "type": "direct"
     }
   ],
   "inbounds": [
