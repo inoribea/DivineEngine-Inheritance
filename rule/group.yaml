@@ -264,6 +264,7 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
+  hidden: true
 
 -
   name: US
