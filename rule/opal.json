@@ -97,7 +97,7 @@
           "geoip-google",
           "geosite-google"
         ],
-        "outbound": "cf"
+        "outbound": "google"
       },
       {
         "rule_set": [
