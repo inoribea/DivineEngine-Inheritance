@@ -239,6 +239,11 @@
       "default": "all"
     },
     {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
       "tag": "cn",
       "type": "selector",
       "outbounds": [
@@ -412,11 +417,6 @@
         "all"
       ],
       "default": "proxy"
-    },
-    {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
     },
     {
       "tag": "GLOBAL",
