@@ -239,6 +239,41 @@
       "default": "all"
     },
     {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "cn",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "direct",
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all"
+      ],
+      "default": "direct"
+    },
+    {
+      "tag": "final",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "direct",
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all"
+      ],
+      "default": "proxy"
+    },
+    {
       "tag": "google",
       "type": "selector",
       "outbounds": [
@@ -359,36 +394,6 @@
       "default": "proxy"
     },
     {
-      "tag": "cn",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "tw",
-        "jp",
-        "sg",
-        "us",
-        "all"
-      ],
-      "default": "direct"
-    },
-    {
-      "tag": "final",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "tw",
-        "jp",
-        "sg",
-        "us",
-        "all"
-      ],
-      "default": "proxy"
-    },
-    {
       "tag": "hk",
       "type": "selector",
       "outbounds": []
@@ -410,11 +415,6 @@
     },
     {
       "tag": "us",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "all",
       "type": "selector",
       "outbounds": []
     },
