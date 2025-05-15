@@ -239,26 +239,6 @@
       "default": "all"
     },
     {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
-      "tag": "final",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "tw",
-        "jp",
-        "sg",
-        "us",
-        "all"
-      ],
-      "default": "proxy"
-    },
-    {
       "tag": "cn",
       "type": "selector",
       "outbounds": [
@@ -415,6 +395,26 @@
     },
     {
       "tag": "us",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "final",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "direct",
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all"
+      ],
+      "default": "proxy"
+    },
+    {
+      "tag": "all",
       "type": "selector",
       "outbounds": []
     },
