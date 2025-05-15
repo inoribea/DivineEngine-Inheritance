@@ -225,11 +225,6 @@
   },
   "outbounds": [
     {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
       "tag": "cn",
       "type": "selector",
       "outbounds": [
@@ -243,6 +238,11 @@
         "all"
       ],
       "default": "direct"
+    },
+    {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
     },
     {
       "tag": "google",
