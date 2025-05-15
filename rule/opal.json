@@ -118,10 +118,6 @@
           "geosite-cn"
         ],
         "outbound": "cn"
-      },
-      {
-        "rule_set": "geolocation-!cn",
-        "outbound": "proxy"
       }
     ],
     "rule_set": [
