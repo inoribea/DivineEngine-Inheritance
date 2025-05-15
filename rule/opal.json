@@ -225,20 +225,6 @@
   },
   "outbounds": [
     {
-      "tag": "proxy",
-      "type": "selector",
-      "outbounds": [
-        "hk",
-        "tw",
-        "jp",
-        "sg",
-        "us",
-        "all",
-        "direct"
-      ],
-      "default": "all"
-    },
-    {
       "tag": "all",
       "type": "selector",
       "outbounds": []
@@ -402,6 +388,20 @@
       "tag": "us",
       "type": "selector",
       "outbounds": []
+    },
+    {
+      "tag": "proxy",
+      "type": "selector",
+      "outbounds": [
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all",
+        "direct"
+      ],
+      "default": "all"
     },
     {
       "tag": "final",
