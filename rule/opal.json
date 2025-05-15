@@ -115,7 +115,6 @@
       },
       {
         "rule_set": [
-          "geoip-cn",
           "geosite-cn"
         ],
         "outbound": "cn"
@@ -152,13 +151,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "cn_ip",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cn.srs",
         "download_detour": "direct"
       },
       {
