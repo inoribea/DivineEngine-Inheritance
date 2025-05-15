@@ -244,21 +244,6 @@
       "outbounds": []
     },
     {
-      "tag": "cn",
-      "type": "selector",
-      "outbounds": [
-        "proxy",
-        "direct",
-        "hk",
-        "tw",
-        "jp",
-        "sg",
-        "us",
-        "all"
-      ],
-      "default": "direct"
-    },
-    {
       "tag": "final",
       "type": "selector",
       "outbounds": [
@@ -272,6 +257,21 @@
         "all"
       ],
       "default": "proxy"
+    },
+    {
+      "tag": "cn",
+      "type": "selector",
+      "outbounds": [
+        "proxy",
+        "direct",
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all"
+      ],
+      "default": "direct"
     },
     {
       "tag": "google",
