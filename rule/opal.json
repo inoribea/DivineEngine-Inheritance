@@ -147,7 +147,7 @@
         "download_detour": "direct"
       },
       {
-        "tag": "bilibil",
+        "tag": "bilibili",
         "type": "remote",
         "format": "binary",
         "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
