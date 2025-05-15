@@ -241,20 +241,14 @@
       "type": "selector",
       "outbounds": [
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
         "all",
-        "all-auto",
         "direct"
       ],
-      "default": "all-auto"
+      "default": "all"
     },
     {
       "tag": "google",
@@ -263,17 +257,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -284,17 +272,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
@@ -305,17 +287,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -326,17 +302,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
@@ -347,17 +317,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -368,17 +332,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -389,17 +347,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -410,17 +362,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -431,17 +377,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
@@ -452,17 +392,11 @@
         "proxy",
         "direct",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "proxy"
     },
@@ -497,71 +431,17 @@
       "outbounds": []
     },
     {
-      "tag": "hk-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
-    },
-    {
-      "tag": "tw-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "11m",
-      "tolerance": 50
-    },
-    {
-      "tag": "jp-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "12m",
-      "tolerance": 50
-    },
-    {
-      "tag": "sg-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "13m",
-      "tolerance": 50
-    },
-    {
-      "tag": "us-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "14m",
-      "tolerance": 50
-    },
-    {
-      "tag": "all-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "15m",
-      "tolerance": 50
-    },
-    {
       "tag": "GLOBAL",
       "type": "selector",
       "outbounds": [
         "direct",
         "proxy",
         "hk",
-        "hk-auto",
         "tw",
-        "tw-auto",
         "jp",
-        "jp-auto",
         "sg",
-        "sg-auto",
         "us",
-        "us-auto",
-        "all",
-        "all-auto"
+        "all"
       ],
       "default": "direct"
     },
