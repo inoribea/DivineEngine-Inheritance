@@ -230,7 +230,6 @@
       "outbounds": [
         "hk-auto",
         "tw-auto",
-        "jp-auto",
         "hk",
         "tw",
         "jp",
@@ -433,14 +432,6 @@
       "outbounds": [],
       "url": "https://www.gstatic.com/generate_204",
       "interval": "10m",
-      "tolerance": 50
-    },
-    {
-      "tag": "jp-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "11m",
       "tolerance": 50
     },
     {
