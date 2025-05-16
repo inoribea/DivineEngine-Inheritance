@@ -234,7 +234,7 @@
         "jp",
         "sg",
         "us",
-        "all",
+        "proxy",
         "direct"
       ],
       "default": "auto"
