@@ -378,7 +378,7 @@
       "tag": "hk",
       "type": "selector",
       "outbounds": [
-        "hk-auto",
+        "hk-auto"
     ],
     "default": "hk-auto"
     },
@@ -386,7 +386,7 @@
       "tag": "tw",
       "type": "selector",
       "outbounds": [
-        "tw-auto",
+        "tw-auto"
     ],
     "default": "tw-auto"
     },
@@ -394,7 +394,7 @@
       "tag": "jp",
       "type": "selector",
       "outbounds": [
-        "jp-auto",
+        "jp-auto"
     ],
     "default": "jp-auto"
     },
