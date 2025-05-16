@@ -225,6 +225,21 @@
   },
   "outbounds": [
     {
+      "tag": "side",
+      "type": "selector",
+      "outbounds": [
+        "auto",
+        "hk",
+        "tw",
+        "jp",
+        "sg",
+        "us",
+        "all",
+        "direct"
+      ],
+      "default": "all"
+    },
+    {
       "tag": "cn",
       "type": "selector",
       "outbounds": [
@@ -240,11 +255,6 @@
       "default": "direct"
     },
     {
-      "tag": "all",
-      "type": "selector",
-      "outbounds": []
-    },
-    {
       "tag": "google",
       "type": "selector",
       "outbounds": [
@@ -255,9 +265,9 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
-      "default": "proxy"
+      "default": "side"
     },
     {
       "tag": "apple",
@@ -270,7 +280,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "direct"
     },
@@ -285,9 +295,9 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
-      "default": "proxy"
+      "default": "side"
     },
     {
       "tag": "bilibili",
@@ -300,7 +310,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "direct"
     },
@@ -315,7 +325,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "jp"
     },
@@ -330,7 +340,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "tw"
     },
@@ -345,7 +355,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "hk"
     },
@@ -360,7 +370,7 @@
         "jp",
         "sg",
         "us",
-        "all"
+        "side"
       ],
       "default": "jp"
     },
@@ -404,6 +414,27 @@
       "default": "all"
     },
     {
+      "tag": "all",
+      "type": "selector",
+      "outbounds": []
+    },
+    {
+      "tag": "auto",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "15m",
+      "tolerance": 50
+    },
+    {
+      "tag": "jp-auto",
+      "type": "urltest",
+      "outbounds": [],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "11m",
+      "tolerance": 50
+    },
+    {
       "tag": "final",
       "type": "selector",
       "outbounds": [
@@ -414,9 +445,10 @@
         "jp",
         "sg",
         "us",
+        "side",
         "all"
       ],
-      "default": "proxy"
+      "default": "side"
     },
     {
       "tag": "GLOBAL",
