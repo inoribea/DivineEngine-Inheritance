@@ -237,7 +237,7 @@
         "all",
         "direct"
       ],
-      "default": "all"
+      "default": "auto"
     },
     {
       "tag": "cn",
