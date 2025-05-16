@@ -377,17 +377,17 @@
     {
       "tag": "hk",
       "type": "selector",
-      "outbounds": []
+      "outbounds": ['hk-auto']
     },
     {
       "tag": "tw",
       "type": "selector",
-      "outbounds": []
+      "outbounds": ['tw-auto']
     },
     {
       "tag": "jp",
       "type": "selector",
-      "outbounds": []
+      "outbounds": ['jp-auto']
     },
     {
       "tag": "sg",
