@@ -317,7 +317,7 @@
         "us",
         "all"
       ],
-      "default": "proxy"
+      "default": "jp"
     },
     {
       "tag": "bahamut",
@@ -332,7 +332,7 @@
         "us",
         "all"
       ],
-      "default": "proxy"
+      "default": "tw"
     },
     {
       "tag": "youtube",
@@ -347,7 +347,7 @@
         "us",
         "all"
       ],
-      "default": "proxy"
+      "default": "hk"
     },
     {
       "tag": "openai",
@@ -362,7 +362,7 @@
         "us",
         "all"
       ],
-      "default": "proxy"
+      "default": "jp"
     },
     {
       "tag": "hk",
