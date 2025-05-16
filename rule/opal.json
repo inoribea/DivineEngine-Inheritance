@@ -228,8 +228,6 @@
       "tag": "side",
       "type": "selector",
       "outbounds": [
-        "hk-auto",
-        "tw-auto",
         "hk",
         "tw",
         "jp",
@@ -238,7 +236,7 @@
         "proxy",
         "direct"
       ],
-      "default": "hk-auto"
+      "default": "hk"
     },
     {
       "tag": "cn",
@@ -417,22 +415,6 @@
       "tag": "all",
       "type": "selector",
       "outbounds": []
-    },
-    {
-      "tag": "hk-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "9m",
-      "tolerance": 50
-    },
-    {
-      "tag": "tw-auto",
-      "type": "urltest",
-      "outbounds": [],
-      "url": "https://www.gstatic.com/generate_204",
-      "interval": "10m",
-      "tolerance": 50
     },
     {
       "tag": "final",
