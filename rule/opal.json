@@ -251,8 +251,7 @@
         "tw",
         "jp",
         "sg",
-        "us",
-        "all"
+        "us"
       ],
       "default": "direct"
     },
