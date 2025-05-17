@@ -236,7 +236,7 @@
         "proxy",
         "direct"
       ],
-      "default": "hk"
+      "default": "tw"
     },
     {
       "tag": "cn",
