@@ -8,7 +8,7 @@ dns:
   enhanced-mode: redir-host
   listen: '[::]:7853'
   nameserver:
-  - quic://223.5.5.5
+  - udp://223.5.5.5
   - https://doh.pub/dns-query
   fallback:
   - udp://94.140.14.14
