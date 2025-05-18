@@ -3,3 +3,4 @@ payload:
   - '+.superpre.pro'
   - 'api.o3.fan'
   - 'api.nekoapi.com'
+  - 'izzy.zw.is'
