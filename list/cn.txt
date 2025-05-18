@@ -4,3 +4,4 @@ payload:
   - 'api.o3.fan'
   - 'api.nekoapi.com'
   - 'izzy.zw.is'
+  - 'dashscope.aliyuncs.com'
