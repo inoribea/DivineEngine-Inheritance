@@ -1,12 +1,11 @@
 ##############################################################################################################################
 rule-providers:
-#  reject:
-#    type: http
-#    behavior: domain
-#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/reject.txt"
-#    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@main/rule/singbox.json
-#    path: ./rule_provider/reject.yaml
-#    interval: 172800
+  reject:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/reject.txt"
+    path: ./rule_provider/reject.yaml
+    interval: 172800
 
   cn:
     type: http
