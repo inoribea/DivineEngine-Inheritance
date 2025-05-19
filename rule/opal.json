@@ -115,12 +115,25 @@
       },
       {
         "rule_set": [
+          "ad-awa"
+        ],
+        "outbound": "reject"
+      },
+      {
+        "rule_set": [
           "geosite-cn"
         ],
         "outbound": "cn"
       }
     ],
     "rule_set": [
+      {
+        "tag": "ad-awa",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://github.boki.moe/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
+        "download_detour": "direct"
+      },
       {
         "tag": "geoip-apple",
         "type": "remote",
