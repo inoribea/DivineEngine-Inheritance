@@ -55,7 +55,7 @@
     "rules": [
       {
         "port": 53,
-        "outbound": "dns-out"
+        "outbound": "side"
       },
       {
         "ip_is_private": true,
@@ -118,10 +118,6 @@
           "ad-awa"
         ],
         "outbound": "reject"
-      },
-      {
-        "rule_set": "dns-out",
-        "outbound": "side"
       },
       {
         "rule_set": [
