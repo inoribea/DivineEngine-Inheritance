@@ -120,6 +120,10 @@
         "outbound": "reject"
       },
       {
+        "rule_set": "dns-out",
+        "outbound": "side"
+      },
+      {
         "rule_set": [
           "geosite-cn"
         ],
