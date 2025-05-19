@@ -55,7 +55,7 @@
     "rules": [
       {
         "port": 53,
-        "outbound": "side"
+        "outbound": "dns-out"
       },
       {
         "ip_is_private": true,
