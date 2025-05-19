@@ -117,7 +117,7 @@
         "rule_set": [
           "ad-awa"
         ],
-        "outbound": "reject"
+        "outbound": "block"
       },
       {
         "rule_set": [
@@ -463,6 +463,10 @@
     {
       "tag": "direct",
       "type": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
     },
     {
       "tag": "dns-out",
