@@ -101,7 +101,6 @@
       },
       {
         "rule_set": [
-          "geoip-apple",
           "geosite-apple"
         ],
         "outbound": "apple"
@@ -115,32 +114,12 @@
       },
       {
         "rule_set": [
-          "ad-awa"
-        ],
-        "outbound": "block"
-      },
-      {
-        "rule_set": [
           "geosite-cn"
         ],
         "outbound": "cn"
       }
     ],
     "rule_set": [
-      {
-        "tag": "ad-awa",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://github.boki.moe/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox-regex.json",
-        "download_detour": "direct"
-      },
-      {
-        "tag": "geoip-apple",
-        "type": "remote",
-        "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/apple.srs",
-        "download_detour": "direct"
-      },
       {
         "tag": "geosite-apple",
         "type": "remote",
@@ -463,10 +442,6 @@
     {
       "tag": "direct",
       "type": "direct"
-    },
-    {
-      "type": "block",
-      "tag": "block"
     },
     {
       "tag": "dns-out",
