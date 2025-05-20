@@ -4,5 +4,4 @@ payload:
   - 'vizier.eso.org'
   - 'gea.esac.esa.int'
   - 'ssd.jpl.nasa.gov'
-  - '+.esa.int'
   - 'almascience.org'
