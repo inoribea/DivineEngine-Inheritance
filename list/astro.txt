@@ -2,3 +2,4 @@ payload:
   - 'vizier.cds.unistra.fr'
   - '+.sdss.org'
   - '+.esa.int'
+  - 'almascience.org'
