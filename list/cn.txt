@@ -5,3 +5,4 @@ payload:
   - 'api.nekoapi.com'
   - 'izzy.zw.is'
   - 'dashscope.aliyuncs.com'
+  - 'vizier.china-vo.org'
