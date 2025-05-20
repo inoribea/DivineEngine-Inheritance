@@ -2,6 +2,7 @@ payload:
   - 'vizier.cds.unistra.fr'
   - 'vizier.nao.ac.jp'
   - 'vizier.eso.org'
+  - 'gea.esac.esa.int'
   - 'ssd.jpl.nasa.gov'
   - '+.esa.int'
   - 'almascience.org'
