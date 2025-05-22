@@ -5,4 +5,7 @@ payload:
   - 'api.nekoapi.com'
   - 'izzy.zw.is'
   - 'dashscope.aliyuncs.com'
+  - 'ch3ng.top'
+  - 'ghproxy.cn'
+  - 'ghproxy.cfd'
   - 'vizier.china-vo.org'
