@@ -212,7 +212,7 @@
         "download_detour": "direct"
       }
     ],
-    "final": "direct",
+    "final": "final",
     "auto_detect_interface": true
   },
   "outbounds": [
@@ -422,7 +422,7 @@
         "side",
         "all"
       ],
-      "default": "side"
+      "default": "direct"
     },
     {
       "tag": "GLOBAL",
