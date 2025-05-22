@@ -155,13 +155,13 @@ rule-providers:
 #    path: ./mrs/geoip/us.mrs
 #    interval: 432000
     
-  jp-cidr:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/jp.mrs"
-    path: ./mrs/geoip/jp.mrs
-    interval: 345600
+#  jp-cidr:
+#    type: http
+#    behavior: ipcidr
+#    format: mrs
+#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/jp.mrs"
+#    path: ./mrs/geoip/jp.mrs
+#    interval: 345600
 
   kr-cidr:
     type: http
