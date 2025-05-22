@@ -4,7 +4,7 @@ rules:
   - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,Domestic
 
-  - DOMAIN-SUFFIX,xns.one,Proxy
+  - DOMAIN-SUFFIX,xns.one,DIRECT
   - DOMAIN-SUFFIX,nxns.link,DIRECT
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
@@ -39,7 +39,7 @@ rules:
   - RULE-SET,twitter-cidr,Social 💬,no-resolve
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
 #  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
-  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
+#  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
   - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
   - RULE-SET,astro,AI ✨
   - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
