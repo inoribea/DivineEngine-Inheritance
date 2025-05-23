@@ -125,7 +125,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/apple.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -133,7 +133,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bahamut.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -141,7 +141,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -149,7 +149,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/cn.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -157,7 +157,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/google.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -165,7 +165,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/google.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -173,7 +173,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/netflix.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
@@ -181,7 +181,7 @@
         "type": "remote",
         "format": "binary",
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/netflix.srs",
-        "download_detour": "direct"，
+        "download_detour": "direct",
         "update_interval": "7d"
       },
       {
