@@ -114,6 +114,7 @@
       },
       {
         "rule_set": [
+          "geoip-cn",
           "geosite-cn"
         ],
         "outbound": "cn"
@@ -143,6 +144,13 @@
         "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
         "download_detour": "direct",
         "update_interval": "7d"
+      },
+      {
+        "tag": "geoip-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cn.srs",
+        "download_detour": "direct"
       },
       {
         "tag": "geosite-cn",
@@ -432,10 +440,9 @@
         "jp",
         "sg",
         "us",
-        "side",
-        "all"
+        "side"
       ],
-      "default": "direct"
+      "default": "proxy"
     },
     {
       "tag": "GLOBAL",
