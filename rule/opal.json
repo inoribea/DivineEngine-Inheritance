@@ -442,7 +442,7 @@
         "us",
         "side"
       ],
-      "default": "proxy"
+      "default": "side"
     },
     {
       "tag": "GLOBAL",
