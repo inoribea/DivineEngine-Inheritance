@@ -1,11 +1,18 @@
 payload:
+# Services
   - '+.189.cn'
-  - '+.superpre.pro'
+  - 'izzy.zw.is'
   - 'api.o3.fan'
   - 'api.nekoapi.com'
-  - 'izzy.zw.is'
+# AI
   - 'dashscope.aliyuncs.com'
+# Astro
+  - 'vizier.china-vo.org'
+  - 'mast.stsci.edu'
+# CDN
   - 'ch3ng.top'
   - 'ghproxy.cn'
   - 'ghproxy.cfd'
-  - 'vizier.china-vo.org'
+# Game
+  - '+.superpre.pro'
+
