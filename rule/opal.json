@@ -246,7 +246,7 @@
         "jp",
         "sg",
         "us",
-        "proxy",
+        "all",
         "direct"
       ],
       "default": "tw"
@@ -419,10 +419,10 @@
         "jp",
         "sg",
         "us",
-        "all",
+        "side",
         "direct"
       ],
-      "default": "all"
+      "default": "side"
     },
     {
       "tag": "all",
