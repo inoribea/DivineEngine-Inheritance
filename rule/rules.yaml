@@ -23,6 +23,7 @@ rules:
   - RULE-SET,paypal,Cross ⚖️
   - RULE-SET,debug,Proxy
   - RULE-SET,ai,AI ✨
+  - RULE-SET,astro,AI ✨
   - RULE-SET,bahamut,Social 💬
   - RULE-SET,youtube,Media 📺
   - RULE-SET,spotify,Media 📺
@@ -41,7 +42,6 @@ rules:
 #  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
 #  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
   - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
-  - RULE-SET,astro,AI ✨
   - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
   
   - GEOIP,LAN,DIRECT
