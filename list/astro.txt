@@ -1,6 +1,5 @@
 payload:
-  - 'vizier.cds.unistra.fr'
-  - 'vizier.nao.ac.jp'
+  - '+.cds.unistra.fr'
   - 'vizier.eso.org'
   - 'gea.esac.esa.int'
   - 'ssd.jpl.nasa.gov'
