@@ -4,6 +4,7 @@ payload:
   - 'izzy.zw.is'
   - 'api.o3.fan'
   - 'api.nekoapi.com'
+  - 'linux.do'
 # AI
   - 'dashscope.aliyuncs.com'
 # Astro
@@ -13,6 +14,7 @@ payload:
   - 'ch3ng.top'
   - 'ghproxy.cn'
   - 'ghproxy.cfd'
+  - 'cdn.jsdelivr.net'
 # Game
   - '+.superpre.pro'
 
