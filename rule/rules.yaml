@@ -19,7 +19,7 @@ rules:
   - RULE-SET,cn,DIRECT
   - RULE-SET,bilibili,Cross ⚖️
   - RULE-SET,paypal,Cross ⚖️
-  - RULE-SET,debug,REJECT-DROP
+  - RULE-SET,debug,REJECT
   - RULE-SET,ai,AI ✨
   - RULE-SET,astro,AI ✨
   - RULE-SET,bahamut,Social 💬
