@@ -3,7 +3,7 @@ payload:
   - '+.189.cn'
   - 'izzy.zw.is'
   - 'api.o3.fan'
-  - 'api.nekoapi.com'
+  - 'nekoapi.com'
   - 'linux.do'
 # AI
   - 'dashscope.aliyuncs.com'
