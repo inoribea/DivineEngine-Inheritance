@@ -2,7 +2,7 @@ payload:
 # Services
   - '+.189.cn'
   - 'izzy.zw.is'
-  - 'api.o3.fan'
+  - 'o3.fan'
   - 'nekoapi.com'
   - 'linux.do'
 # AI
