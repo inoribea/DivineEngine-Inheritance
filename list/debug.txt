@@ -1,4 +1,3 @@
 # REJECT-DROP
 payload:
-  - '+.nxns.link'
-  - '+.xns.one'
+
