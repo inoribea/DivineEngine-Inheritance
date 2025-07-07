@@ -125,7 +125,7 @@
         "tag": "geosite-apple",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/apple.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/apple.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -133,7 +133,7 @@
         "tag": "bahamut",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bahamut.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bahamut.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -141,7 +141,7 @@
         "tag": "bilibili",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/bilibili.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -149,14 +149,14 @@
         "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cn.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geoip/cn.srs",
         "download_detour": "direct"
       },
       {
         "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/cn.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/cn.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -164,7 +164,7 @@
         "tag": "geoip-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/google.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/google.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -172,7 +172,7 @@
         "tag": "geosite-google",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/google.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/google.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -180,7 +180,7 @@
         "tag": "geoip-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/netflix.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/netflix.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -188,7 +188,7 @@
         "tag": "geosite-netflix",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/netflix.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/netflix.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -196,7 +196,7 @@
         "tag": "openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/openai.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/openai.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -204,7 +204,7 @@
         "tag": "proxy",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/geolocation-!cn.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo/geosite/geolocation-!cn.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -212,7 +212,7 @@
         "tag": "geoip-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/telegram.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geoip/telegram.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -220,7 +220,7 @@
         "tag": "geosite-telegram",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/telegram.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/telegram.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       },
@@ -228,7 +228,7 @@
         "tag": "youtube",
         "type": "remote",
         "format": "binary",
-        "url": "https://cdn.crashmc.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/youtube.srs",
+        "url": "https://ghproxy.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/sing/geo-lite/geosite/youtube.srs",
         "download_detour": "direct",
         "update_interval": "7d"
       }
@@ -497,7 +497,7 @@
     "clash_api": {
       "external_controller": "127.0.0.1:9090",
       "external_ui": "ui",
-      "external_ui_download_url": "https://cdn.crashmc.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip",
+      "external_ui_download_url": "https://ghproxy.cn/https://github.com/Zephyruso/zashboard/releases/latest/download/dist-cdn-fonts.zip",
       "external_ui_download_detour": "direct"
     },
     "cache_file": {
