@@ -17,4 +17,5 @@ payload:
   - 'cdn.jsdelivr.net'
 # Game
   - '+.superpre.pro'
+  - 'ygom.top'
 
