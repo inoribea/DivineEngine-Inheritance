@@ -1,5 +1,7 @@
 payload:
 # Services
+  - '+.pro.xns.one'
+  - '+.nxns.link'
   - '+.189.cn'
   - 'izzy.zw.is'
   - 'o3.fan'
