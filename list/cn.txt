@@ -20,4 +20,5 @@ payload:
 # Game
   - '+.superpre.pro'
   - 'ygom.top'
+  - '+.neos.moe'
 
