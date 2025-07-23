@@ -1,7 +1,3 @@
 payload:
 # Services
-  - '*.microsoft.com'
-  - '+.live.com'
-  - '+.office.com'
-  - '*.windows.com'
   - '*.intel.com'
