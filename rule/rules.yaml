@@ -6,7 +6,6 @@ rules:
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN-KEYWORD,cdn,Cross ⚖️
-  - RULE-SET,cross,Cross ⚖️
   
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
@@ -20,6 +19,7 @@ rules:
   - RULE-SET,private,DIRECT
 #  - RULE-SET,reject,REJECT
   - RULE-SET,cn,DIRECT
+  - RULE-SET,cross,Cross ⚖️
   - RULE-SET,microsoft,Cross ⚖️
   - RULE-SET,bilibili,Cross ⚖️
   - RULE-SET,paypal,Cross ⚖️
