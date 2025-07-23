@@ -14,13 +14,6 @@ rule-providers:
     path: ./rule_provider/cn.yaml
     interval: 86400
 
-  cdn:
-    type: http
-    behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cdn.txt"
-    path: ./rule_provider/cdn.yaml
-    interval: 86400
-
   cross:
     type: http
     behavior: domain
