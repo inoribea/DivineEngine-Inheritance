@@ -246,7 +246,7 @@ rule-providers:
     interval: 170800
 
   netflix-cidr: 
-    输入: http
+    type: http
     behavior: ipcidr
     format: mrs
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/netflix.mrs"
@@ -309,7 +309,7 @@ proxy-groups:
    
 -
   name: "Social 💬"
-  输入: select
+  type: select
   proxies:
   - Proxy
   - JP 🇯🇵
@@ -321,7 +321,7 @@ proxy-groups:
 
 -
   name: "Service 📶"
-  输入: select
+  type: select
   proxies:
   - Proxy
   - US 🇺🇸
