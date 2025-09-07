@@ -268,7 +268,7 @@ rule-providers:
 proxy-groups:
 -
   name: Proxy
-  输入: select
+  type: select
   include-all-proxies: true
   proxies:
   - Auto
@@ -291,7 +291,7 @@ proxy-groups:
  
 -
   name: "Cross ⚖️"
-  输入: select
+  type: select
   proxies:
   - Domestic
   - HK 🇭🇰
