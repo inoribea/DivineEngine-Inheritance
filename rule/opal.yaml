@@ -1,0 +1,794 @@
+##############################################################################################################################
+
+dns:
+  enable: true
+  prefer-h3: true
+  fake-ip-filter-mode: blacklist
+  ipv6: true
+  enhanced-mode: redir-host
+  listen: '[::]:7853'
+  nameserver:
+  - udp://223.5.5.5
+  - https://doh.pub/dns-query
+  fallback:
+  - udp://94.140.14.14
+  - https://1.1.1.1/dns-query
+  default-nameserver:
+  - 119.29.29.29
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 100.100.0.0/24
+      - 127.0.0.0/8
+      - 169.254.0.0/16
+      - 172.16.0.0/12
+      - 192.0.0.0/24
+      - 192.0.2.0/24
+      - 192.88.99.0/24
+      - 192.168.0.0/16
+      - 198.18.0.0/15
+      - 198.51.100.0/24
+      - 203.0.113.0/24
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+    domain:
+      - "+.google.com"
+      - "+.facebook.com"
+      - "+.youtube.com"
+      - "+.githubusercontent.com"
+      - "+.googlevideo.com"
+      - "+.msftconnecttest.com"
+      - "+.msftncsi.com"
+  fake-ip-range: 198.18.0.1/16
+profile:
+  store-selected: true
+  store-fake-ip: false
+experimental:
+  sniff-tls-sni: false
+
+sniffer:
+  enable: true
+  force-dns-mapping: true
+  parse-pure-ip: true
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 8080-8880
+      override-destination: true
+    TLS:
+      ports:
+        - 443
+        - 8443
+    QUIC:
+      ports:
+        - 443
+        - 8443
+
+
+  
+  
+  ##############################################################################################################################
+
+##############################################################################################################################
+rule-providers:
+#  reject:
+#    type: http
+#    behavior: domain
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/reject.txt"
+#    path: ./rule_provider/reject.yaml
+#    interval: 172800
+
+  cn:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cn.txt"
+    path: ./rule_provider/cn.yaml
+    interval: 86400
+
+  cross:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cross.txt"
+    path: ./rule_provider/cross.yaml
+    interval: 86400
+
+  microsoft:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/microsoft.txt"
+    path: ./rule_provider/microsoft.yaml
+    interval: 86400
+    
+  bilibili:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bilibili.txt"
+    path: ./rule_provider/bilibili.yaml
+    interval: 86400
+  
+  paypal:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/paypal.txt"
+    path: ./rule_provider/paypal.yaml
+    interval: 86400
+
+  bahamut:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bahamut.txt"
+    path: ./rule_provider/bahamut.yaml
+    interval: 86400
+
+  debug:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/debug.txt"
+    path: ./rule_provider/cdebug.yaml
+    interval: 86400
+
+  ai:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/ai.txt"
+    path: ./rule_provider/ai.yaml
+    interval: 86400
+    
+  astro:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/astro.txt"
+    path: ./rule_provider/astro.yaml
+    interval: 86400
+
+  disney:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/disney.txt"
+    path: ./rule_provider/disney.yaml
+    interval: 86400
+
+  youtube:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/youtube.txt"
+    path: ./rule_provider/youtube.yaml
+    interval: 86400
+
+  spotify:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/spotify.txt"
+    path: ./rule_provider/spotify.yaml
+    interval: 86400
+
+  icloud:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/icloud.txt"
+    path: ./rule_provider/icloud.yaml
+    interval: 176400
+
+  apple:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/apple.txt"
+    path: ./rule_provider/apple.yaml
+    interval: 176400
+
+  google:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/google.txt"
+    path: ./rule_provider/google.yaml
+    interval: 180000
+
+#  proxy:
+#    type: http
+#    behavior: domain
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/proxy.txt"
+#    path: ./ruleset/proxy.yaml
+#    interval: 259200
+
+#  direct:
+#    type: http
+#    behavior: domain
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/direct.txt"
+#    path: ./rule_provider/direct.yaml
+#    interval: 252000
+
+  private:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/private.txt"
+    path: ./rule_provider/private.yaml
+    interval: 172800
+
+  gfw:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/gfw.txt"
+    path: ./rule_provider/gfw.yaml
+    interval: 173800
+
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/lancidr.txt"
+    path: ./ruleset/lancidr.yaml
+    interval: 175800
+
+  telegramcidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/telegramcidr.txt"
+    path: ./rule_provider/telegramcidr.yaml
+    interval: 172800
+
+  applications:
+    type: http
+    behavior: classical
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/applications.txt"
+    path: ./rule_provider/applications.yaml
+    interval: 172800
+      
+  twitter-cidr: 
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/twitter.mrs"
+    path: ./mrs/geoip/twitter.mrs
+    interval: 170800
+
+  netflix-cidr: 
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/netflix.mrs"
+    path: ./mrs/geoip/netflix.mrs
+    interval: 172800
+
+  tor-cidr: 
+    type: http
+    behavior: ipcidr
+    format: mrs
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/tor.mrs"
+    path: ./mrs/geoip/tor.mrs
+    interval: 182000
+
+##############################################################################################################################
+
+##############################################################################################################################
+
+proxy-groups:
+-
+  name: Proxy
+  type: select
+  include-all-proxies: true
+  proxies:
+  - Auto
+  - Cross ⚖️
+  - DIRECT
+  filter: "(?i).+$"
+  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  udp-over-tcp: true
+  
+-
+  name: Auto
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)🏠|⚪|🔴|🔵|🟢"
+  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 360
+  hidden: true
+  udp-over-tcp: true
+ 
+-
+  name: "Cross ⚖️"
+  type: select
+  proxies:
+  - Domestic
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - US 🇺🇸
+  - EU 🇪🇺
+  - RU 🇷🇺
+  - MEF 🇸🇦
+  - OC 🇭🇲
+  - SEA 🇹🇱
+  - LAF 🇿🇦
+   
+-
+  name: "Social 💬"
+  type: select
+  proxies:
+  - Proxy
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - US 🇺🇸
+  - Domestic
+
+-
+  name: "Service 📶"
+  type: select
+  proxies:
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - Domestic
+
+-
+  name: "AI ✨"
+  type: select
+  proxies:
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - EU 🇪🇺
+  - OC 🇭🇲
+  - Domestic
+
+-
+  name: "Media 📺"
+  type: select
+  proxies:
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - Domestic
+  include-all-proxies: true
+  filter: "(?i)流媒体|视频|油管|网飞|media"
+
+-  
+  name: "Others 🛰️"
+  type: select
+  proxies:
+  - Proxy
+  - Domestic
+
+-
+  name: "Wall 🧱"
+  type: select
+  proxies:
+  - Proxy
+  - Domestic
+
+-
+  name: "HK 🇭🇰"
+  type: select
+  proxies:
+  - HK
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)香港|澳门|hk|Macao"
+ 
+   
+-
+  name: "TW 🇹🇼"
+  type: select
+  proxies:
+  - TW
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)台湾|tw"
+ 
+
+-
+  name: "JP 🇯🇵"
+  type: select
+  proxies:
+  - JP
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)日本|jp"
+ 
+   
+-
+  name: "KR 🇰🇷"
+  type: select
+  proxies:
+  - KR
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)韩|kr"
+ 
+
+-
+  name: "SG 🇸🇬"
+  type: select
+  proxies:
+  - SG
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)新加坡|狮城|sg"
+ 
+
+-
+  name: "OC 🇭🇲"
+  type: select
+  proxies:
+  - OC
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)澳大|斐济|新西兰|南极"
+ 
+
+-
+  name: "EU 🇪🇺"
+  type: select
+  proxies:
+  - EU
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|匈牙利|卢森堡|Germany|France|United Kingdom|Italy|Spain|Netherlands|Hungary|Luxembourg"
+ 
+
+-
+  name: "US 🇺🇸"
+  type: select
+  proxies:
+  - US
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)美国|加拿大|us |USA|Canada"
+
+   
+-
+  name: "RU 🇷🇺"
+  type: select
+  proxies:
+  - RU
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)俄|乌克|ru"
+   
+-
+  name: "MEF 🇸🇦"
+  type: select
+  proxies:
+  - SA
+  - IS
+  - TR
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|UAE|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria"
+
+-
+  name: "SEA 🇹🇱"
+  type: select
+  proxies:
+  - SEA
+  - IB
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia"
+
+-
+  name: "LAF 🇿🇦"
+  type: select
+  proxies:
+  - LA
+  - AF
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg"
+
+-
+  name: "Game 🎮"
+  type: select
+  udp : true  
+  proxies:
+  - Domestic
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - MEF 🇸🇦
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)游戏|game"
+
+-
+  name: "BlackHole 🧅"
+  type: select
+  proxies:
+  - REJECT
+  - REJECT-DROP
+  - Domestic
+  - Proxy
+
+-
+  name: "Domestic 🏠"
+  type: select
+  proxies:
+  - DIRECT
+  hidden: true
+
+-
+  name: US
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)美国|us |USA"
+  exclude-filter: "通用|标准|解锁|自动|Australia"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3000
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: RU
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)俄|乌克|ru"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3200
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: IB
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)印度|巴基斯坦|ib"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3200
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: SA
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)迪拜|阿联|sa "
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3400
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: TR
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)土耳其|斯坦|tr |tr-"
+  exclude-filter: "通用|标准|解锁|自动|巴基斯坦|Australia"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3200
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: JP
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)日本|jp"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3600
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: KR
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)韩|kr"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 3800
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: SG
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)新加坡|sg"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4000
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: HK
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)香港|hk"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4200
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: TW
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)台湾|tw"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4400
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: EU
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|UK|Italy|Spain|Netherlands"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4600
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: OC
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)澳大利亚|新西兰|斐济|汤加|南极|Australia|New Zealand|Fiji|Tonga|Antarctica"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4800
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: SEA
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4800
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: AF
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)南非|South Africa|Johannesburg"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 4800
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: LA
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|Peru|Chile|Bolivia|Argentina|Brazil"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 5000
+  lazy: true
+  hidden: true
+ 
+
+-
+  name: IS
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)埃及|也门|伊拉克|以色列|约旦|Egypt|Yemen|Iraq|Israel|Jordan"
+  exclude-filter: "通用|标准|解锁|自动"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 5200
+  lazy: true
+  hidden: true
+ 
+   
+-
+  name: Domestic
+  type: select
+  proxies:
+  - Domestic 🏠
+  hidden: true
+  udp-over-tcp: true
+
+##############################################################################################################################
+
+##############################################################################################################################
+
+rules:
+  - PROCESS-NAME,tailscaled,Domestic
+  - DST-PORT,3479,Domestic
+
+  - DOMAIN-SUFFIX,bing.com,DIRECT
+  - DOMAIN-KEYWORD,cdn,Cross ⚖️
+  
+  - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
+  - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
+  - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
+  - DOMAIN,ptest-4.ipcheck.ing,EU 🇪🇺
+  - DOMAIN,ptest-5.ipcheck.ing,US 🇺🇸
+  - DOMAIN,ptest-6.ipcheck.ing,SG 🇸🇬
+  - DOMAIN,ptest-7.ipcheck.ing,KR 🇰🇷
+  - DOMAIN,ptest-8.ipcheck.ing,JP 🇯🇵
+
+  - RULE-SET,private,DIRECT
+#  - RULE-SET,reject,REJECT
+  - RULE-SET,cn,DIRECT
+  - RULE-SET,cross,Cross ⚖️
+  - RULE-SET,microsoft,Cross ⚖️
+  - RULE-SET,bilibili,Cross ⚖️
+  - RULE-SET,paypal,Cross ⚖️
+  - RULE-SET,debug,COMPATIBLE
+  - RULE-SET,ai,AI ✨
+  - RULE-SET,astro,AI ✨
+  - RULE-SET,bahamut,Social 💬
+  - RULE-SET,youtube,Media 📺
+  - RULE-SET,spotify,Media 📺
+  - RULE-SET,disney,Media 📺
+  - RULE-SET,google,Service 📶
+  - RULE-SET,icloud,Service 📶
+  - RULE-SET,apple,Service 📶
+  - RULE-SET,gfw,Wall 🧱
+# - RULE-SET,proxy,Proxy
+#  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
+#  - RULE-SET,direct,DIRECT
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,telegramcidr,Social 💬,no-resolve
+  - RULE-SET,twitter-cidr,Social 💬,no-resolve
+  - RULE-SET,netflix-cidr,Media 📺,no-resolve
+#  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
+#  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
+  - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
+  - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
+  
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - DST-PORT,80,Others 🛰️
+  - DST-PORT,443,Others 🛰️
+  - DST-PORT,60070,DIRECT
+  - NETWORK,udp,DIRECT
+  - MATCH,Proxy
+
+##############################################################################################################################
+
