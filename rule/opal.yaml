@@ -737,7 +737,6 @@ proxy-groups:
 ##############################################################################################################################
 
 rules:
-  - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,Domestic
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
