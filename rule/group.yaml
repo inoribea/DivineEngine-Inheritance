@@ -67,6 +67,73 @@ proxy-groups:
 -
   name: "AI ✨"
   type: select
+  proxies:proxy-groups:
+-
+  name: Proxy
+  type: select
+  include-all-proxies: true
+  proxies:
+  - Auto
+  - Cross ⚖️
+  - DIRECT
+  filter: "(?i).+$"
+  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  udp-over-tcp: true
+  
+-
+  name: Auto
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)🏠|⚪|🔴|🔵|🟢|特殊"
+  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  url: 'http://speedtest.inoribea.moe'
+  interval: 360
+  hidden: true
+  udp-over-tcp: true
+ 
+-
+  name: "Cross ⚖️"
+  type: select
+  proxies:
+  - Domestic
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - US 🇺🇸
+  - EU 🇪🇺
+  - RU 🇷🇺
+  - MEF 🇸🇦
+  - OC 🇭🇲
+  - SEA 🇹🇱
+  - LAF 🇿🇦
+   
+-
+  name: "Social 💬"
+  type: select
+  proxies:
+  - Proxy
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - US 🇺🇸
+  - Domestic
+
+-
+  name: "Service 📶"
+  type: select
+  proxies:
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - Domestic
+
+-
+  name: "AI ✨"
+  type: select
   proxies:
   - Proxy
   - US 🇺🇸
@@ -107,7 +174,6 @@ proxy-groups:
   name: "HK 🇭🇰"
   type: select
   proxies:
-  - HK
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -118,7 +184,6 @@ proxy-groups:
   name: "TW 🇹🇼"
   type: select
   proxies:
-  - TW
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -129,7 +194,6 @@ proxy-groups:
   name: "JP 🇯🇵"
   type: select
   proxies:
-  - JP
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -140,7 +204,6 @@ proxy-groups:
   name: "KR 🇰🇷"
   type: select
   proxies:
-  - KR
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -151,7 +214,6 @@ proxy-groups:
   name: "SG 🇸🇬"
   type: select
   proxies:
-  - SG
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -162,7 +224,6 @@ proxy-groups:
   name: "OC 🇭🇲"
   type: select
   proxies:
-  - OC
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -173,7 +234,6 @@ proxy-groups:
   name: "EU 🇪🇺"
   type: select
   proxies:
-  - EU
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -184,7 +244,6 @@ proxy-groups:
   name: "US 🇺🇸"
   type: select
   proxies:
-  - US
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -195,7 +254,6 @@ proxy-groups:
   name: "RU 🇷🇺"
   type: select
   proxies:
-  - RU
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -205,9 +263,6 @@ proxy-groups:
   name: "MEF 🇸🇦"
   type: select
   proxies:
-  - SA
-  - IS
-  - TR
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -217,8 +272,6 @@ proxy-groups:
   name: "SEA 🇹🇱"
   type: select
   proxies:
-  - SEA
-  - IB
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -228,8 +281,6 @@ proxy-groups:
   name: "LAF 🇿🇦"
   type: select
   proxies:
-  - LA
-  - AF
   - Domestic
   - REJECT
   include-all-proxies: true
@@ -265,198 +316,6 @@ proxy-groups:
   proxies:
   - DIRECT
   hidden: true
-
--
-  name: US
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)美国|us |USA"
-  exclude-filter: "通用|标准|解锁|自动|Australia"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3000
-  lazy: true
-  hidden: true
- 
-   
--
-  name: RU
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)俄|乌克|ru"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3200
-  lazy: true
-  hidden: true
- 
-   
--
-  name: IB
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)印度|巴基斯坦|ib"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3200
-  lazy: true
-  hidden: true
- 
-   
--
-  name: SA
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)迪拜|阿联|sa "
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3400
-  lazy: true
-  hidden: true
- 
-   
--
-  name: TR
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)土耳其|斯坦|tr |tr-"
-  exclude-filter: "通用|标准|解锁|自动|巴基斯坦|Australia"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3200
-  lazy: true
-  hidden: true
- 
-   
--
-  name: JP
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)日本|jp"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3600
-  lazy: true
-  hidden: true
- 
-   
--
-  name: KR
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)韩|kr"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 3800
-  lazy: true
-  hidden: true
- 
-   
--
-  name: SG
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)新加坡|sg"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4000
-  lazy: true
-  hidden: true
- 
-   
--
-  name: HK
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)香港|hk"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4200
-  lazy: true
-  hidden: true
- 
-   
--
-  name: TW
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)台湾|tw"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4400
-  lazy: true
-  hidden: true
- 
-
--
-  name: EU
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|Germany|France|United Kingdom|UK|Italy|Spain|Netherlands"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4600
-  lazy: true
-  hidden: true
- 
-
--
-  name: OC
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)澳大利亚|新西兰|斐济|汤加|南极|Australia|New Zealand|Fiji|Tonga|Antarctica"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4800
-  lazy: true
-  hidden: true
- 
-
--
-  name: SEA
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4800
-  lazy: true
-  hidden: true
- 
-
--
-  name: AF
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)南非|South Africa|Johannesburg"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 4800
-  lazy: true
-  hidden: true
- 
-
--
-  name: LA
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|Peru|Chile|Bolivia|Argentina|Brazil"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 5000
-  lazy: true
-  hidden: true
- 
-
--
-  name: IS
-  type: url-test
-  include-all-proxies: true
-  filter: "(?i)埃及|也门|伊拉克|以色列|约旦|Egypt|Yemen|Iraq|Israel|Jordan"
-  exclude-filter: "通用|标准|解锁|自动"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 5200
-  lazy: true
-  hidden: true
- 
    
 -
   name: Domestic
@@ -467,3 +326,4 @@ proxy-groups:
   udp-over-tcp: true
 
 ##############################################################################################################################
+
