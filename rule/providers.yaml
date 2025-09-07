@@ -3,161 +3,161 @@ rule-providers:
 #  reject:
 #    type: http
 #    behavior: domain
-#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/reject.txt"
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/reject.txt"
 #    path: ./rule_provider/reject.yaml
 #    interval: 172800
 
   cn:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cn.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cn.txt"
     path: ./rule_provider/cn.yaml
     interval: 86400
 
   cross:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cross.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/cross.txt"
     path: ./rule_provider/cross.yaml
     interval: 86400
 
   microsoft:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/microsoft.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/microsoft.txt"
     path: ./rule_provider/microsoft.yaml
     interval: 86400
     
   bilibili:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bilibili.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bilibili.txt"
     path: ./rule_provider/bilibili.yaml
     interval: 86400
   
   paypal:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/paypal.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/paypal.txt"
     path: ./rule_provider/paypal.yaml
     interval: 86400
 
   bahamut:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bahamut.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/bahamut.txt"
     path: ./rule_provider/bahamut.yaml
     interval: 86400
 
   debug:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/debug.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/debug.txt"
     path: ./rule_provider/cdebug.yaml
     interval: 86400
 
   ai:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/ai.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/ai.txt"
     path: ./rule_provider/ai.yaml
     interval: 86400
     
   astro:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/astro.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/astro.txt"
     path: ./rule_provider/astro.yaml
     interval: 86400
 
   disney:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/disney.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/disney.txt"
     path: ./rule_provider/disney.yaml
     interval: 86400
 
   youtube:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/youtube.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/youtube.txt"
     path: ./rule_provider/youtube.yaml
     interval: 86400
 
   spotify:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/spotify.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/spotify.txt"
     path: ./rule_provider/spotify.yaml
     interval: 86400
 
   icloud:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/icloud.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/icloud.txt"
     path: ./rule_provider/icloud.yaml
     interval: 176400
 
   apple:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/apple.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/apple.txt"
     path: ./rule_provider/apple.yaml
     interval: 176400
 
   google:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/google.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/google.txt"
     path: ./rule_provider/google.yaml
     interval: 180000
 
   proxy:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/proxy.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 259200
 
 #  direct:
 #    type: http
 #    behavior: domain
-#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/direct.txt"
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/direct.txt"
 #    path: ./rule_provider/direct.yaml
 #    interval: 252000
 
   private:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/private.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/private.txt"
     path: ./rule_provider/private.yaml
     interval: 172800
 
   gfw:
     type: http
     behavior: domain
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/gfw.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/gfw.txt"
     path: ./rule_provider/gfw.yaml
     interval: 173800
 
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/lancidr.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 175800
 
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/telegramcidr.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/telegramcidr.txt"
     path: ./rule_provider/telegramcidr.yaml
     interval: 172800
 
   applications:
     type: http
     behavior: classical
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/applications.txt"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/applications.txt"
     path: ./rule_provider/applications.yaml
     interval: 172800
   
@@ -165,7 +165,7 @@ rule-providers:
 #    type: http
 #    behavior: ipcidr
 #    format: mrs
-#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/us.mrs"
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/us.mrs"
 #    path: ./mrs/geoip/us.mrs
 #    interval: 432000
     
@@ -173,7 +173,7 @@ rule-providers:
 #    type: http
 #    behavior: ipcidr
 #    format: mrs
-#    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/jp.mrs"
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/jp.mrs"
 #    path: ./mrs/geoip/jp.mrs
 #    interval: 345600
 
@@ -181,7 +181,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/kr.mrs"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/kr.mrs"
     path: ./mrs/geoip/kr.mrs
     interval: 347600
       
@@ -189,7 +189,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/twitter.mrs"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/twitter.mrs"
     path: ./mrs/geoip/twitter.mrs
     interval: 170800
 
@@ -197,7 +197,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/netflix.mrs"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/netflix.mrs"
     path: ./mrs/geoip/netflix.mrs
     interval: 172800
 
@@ -205,7 +205,7 @@ rule-providers:
     type: http
     behavior: ipcidr
     format: mrs
-    url: "https://ghproxy.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/tor.mrs"
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/tor.mrs"
     path: ./mrs/geoip/tor.mrs
     interval: 182000
 
