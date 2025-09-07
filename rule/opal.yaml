@@ -209,12 +209,12 @@ rule-providers:
     path: ./rule_provider/private.yaml
     interval: 172800
 
-  gfw:
-    type: http
-    behavior: domain
-    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/gfw.txt"
-    path: ./rule_provider/gfw.yaml
-    interval: 173800
+#  gfw:
+#    type: http
+#    behavior: domain
+#    url: "https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/gfw.txt"
+#    path: ./rule_provider/gfw.yaml
+#    interval: 173800
 
   lancidr:
     type: http
@@ -559,8 +559,8 @@ rules:
   - RULE-SET,google,Service 📶
   - RULE-SET,icloud,Service 📶
   - RULE-SET,apple,Service 📶
-  - RULE-SET,gfw,Wall 🧱
-# - RULE-SET,proxy,Proxy
+#  - RULE-SET,gfw,Wall 🧱
+#  - RULE-SET,proxy,Proxy
 #  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
 #  - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
