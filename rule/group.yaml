@@ -17,73 +17,6 @@ proxy-groups:
   name: Auto
   type: url-test
   include-all-proxies: true
-  filter: "(?i)🏠|⚪|🔴|🔵|🟢"
-  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
-  url: 'http://speedtest.inoribea.moe'
-  interval: 360
-  hidden: true
-  udp-over-tcp: true
- 
--
-  name: "Cross ⚖️"
-  type: select
-  proxies:
-  - Domestic
-  - HK 🇭🇰
-  - TW 🇹🇼
-  - JP 🇯🇵
-  - KR 🇰🇷
-  - SG 🇸🇬
-  - US 🇺🇸
-  - EU 🇪🇺
-  - RU 🇷🇺
-  - MEF 🇸🇦
-  - OC 🇭🇲
-  - SEA 🇹🇱
-  - LAF 🇿🇦
-   
--
-  name: "Social 💬"
-  type: select
-  proxies:
-  - Proxy
-  - JP 🇯🇵
-  - KR 🇰🇷
-  - HK 🇭🇰
-  - TW 🇹🇼
-  - US 🇺🇸
-  - Domestic
-
--
-  name: "Service 📶"
-  type: select
-  proxies:
-  - Proxy
-  - US 🇺🇸
-  - JP 🇯🇵
-  - KR 🇰🇷
-  - Domestic
-
--
-  name: "AI ✨"
-  type: select
-  proxies:proxy-groups:
--
-  name: Proxy
-  type: select
-  include-all-proxies: true
-  proxies:
-  - Auto
-  - Cross ⚖️
-  - DIRECT
-  filter: "(?i).+$"
-  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
-  udp-over-tcp: true
-  
--
-  name: Auto
-  type: url-test
-  include-all-proxies: true
   filter: "(?i)🏠|⚪|🔴|🔵|🟢|特殊"
   exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
   url: 'http://speedtest.inoribea.moe'
@@ -326,4 +259,5 @@ proxy-groups:
   udp-over-tcp: true
 
 ##############################################################################################################################
+
 
