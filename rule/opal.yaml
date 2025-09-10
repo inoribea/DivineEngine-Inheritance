@@ -1,7 +1,7 @@
 ##############################################################################################################################
 
 dns:
-  enable: true
+  enable: false
   prefer-h3: true
   fake-ip-filter-mode: blacklist
   ipv6: true
@@ -52,7 +52,7 @@ experimental:
   sniff-tls-sni: false
 
 sniffer:
-  enable: true
+  enable: false
   force-dns-mapping: true
   parse-pure-ip: true
   sniff:
