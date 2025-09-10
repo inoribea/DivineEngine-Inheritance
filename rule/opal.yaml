@@ -428,7 +428,6 @@ proxy-groups:
   - US 🇺🇸
   - JP 🇯🇵
   - KR 🇰🇷
-  - MEF 🇸🇦
   - REJECT
   include-all-proxies: true
   filter: "(?i)游戏|game"
