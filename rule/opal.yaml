@@ -300,12 +300,6 @@ proxy-groups:
   - KR 🇰🇷
   - SG 🇸🇬
   - US 🇺🇸
-  - EU 🇪🇺
-  - RU 🇷🇺
-  - MEF 🇸🇦
-  - OC 🇭🇲
-  - SEA 🇹🇱
-  - LAF 🇿🇦
    
 -
   name: "Social 💬"
@@ -336,8 +330,6 @@ proxy-groups:
   - Proxy
   - US 🇺🇸
   - JP 🇯🇵
-  - EU 🇪🇺
-  - OC 🇭🇲
   - Domestic
 
 -
@@ -416,27 +408,6 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)新加坡|狮城|sg"
- 
-
--
-  name: "OC 🇭🇲"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)澳大|斐济|新西兰|南极"
- 
-
--
-  name: "EU 🇪🇺"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|匈牙利|卢森堡|Germany|France|United Kingdom|Italy|Spain|Netherlands|Hungary|Luxembourg"
- 
 
 -
   name: "US 🇺🇸"
@@ -446,43 +417,6 @@ proxy-groups:
   - REJECT
   include-all-proxies: true
   filter: "(?i)美国|加拿大|us |USA|Canada"
-
-   
--
-  name: "RU 🇷🇺"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)俄|乌克|ru"
-   
--
-  name: "MEF 🇸🇦"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|UAE|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria"
-
--
-  name: "SEA 🇹🇱"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia"
-
--
-  name: "LAF 🇿🇦"
-  type: select
-  proxies:
-  - Domestic
-  - REJECT
-  include-all-proxies: true
-  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg"
 
 -
   name: "Game 🎮"
@@ -533,10 +467,6 @@ rules:
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN-KEYWORD,cdn,Cross ⚖️
   
-  - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
-  - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
-  - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
-  - DOMAIN,ptest-4.ipcheck.ing,EU 🇪🇺
   - DOMAIN,ptest-5.ipcheck.ing,US 🇺🇸
   - DOMAIN,ptest-6.ipcheck.ing,SG 🇸🇬
   - DOMAIN,ptest-7.ipcheck.ing,KR 🇰🇷
