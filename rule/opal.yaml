@@ -285,7 +285,7 @@ proxy-groups:
   filter: "(?i)🏠|⚪|🔴|🔵|🟢|特殊"
   exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
   url: 'http://speedtest.inoribea.moe'
-  interval: 360
+  interval: 360000
   hidden: true
   udp-over-tcp: true
  
