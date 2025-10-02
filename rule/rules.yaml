@@ -6,7 +6,7 @@ rules:
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN-KEYWORD,cdn,PASS
-  - DOMAIN-KEYWORD,mirrors,DIRECY
+  - DOMAIN-KEYWORD,mirrors,DIRECT
   
   - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
@@ -56,4 +56,5 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
