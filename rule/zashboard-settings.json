@@ -23,7 +23,7 @@
   "config/truncate-proxy-name": "true",
   "config/source-ip-label-map": "{}",
   "config/group-proxies-by-provider": "false",
-  "config/connection-table-columns": "[\"close\",\"sniffHost\",\"type\",\"chains\",\"dlSpeed\",\"ulSpeed\",\"dl\",\"ul\",\"sourceIP\",\"connectTime\"]",
+  "config/connection-table-columns": "[\"close\",\"host\",\"type\",\"chains\",\"dlSpeed\",\"ulSpeed\",\"dl\",\"ul\",\"sourceIP\",\"connectTime\"]",
   "config/low-latency": "400",
   "config/hide-unavailable-proxies": "false",
   "config/independent-latency-test": "true",
