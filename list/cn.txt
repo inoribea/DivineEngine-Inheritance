@@ -23,4 +23,5 @@ payload:
   - '+.superpre.pro'
   - 'ygom.top'
   - '+.neos.moe'
+  - '+.moecube.com'
 
