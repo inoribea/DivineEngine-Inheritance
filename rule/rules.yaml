@@ -8,14 +8,14 @@ rules:
   - DOMAIN-KEYWORD,cdn,PASS
   - DOMAIN-KEYWORD,mirrors,DIRECT
   
-  - DOMAIN,ptest-1.ipcheck.ing,RU 🇷🇺
+  - DOMAIN,ptest-1.ipcheck.ing,EU 🇪🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
-  - DOMAIN,ptest-3.ipcheck.ing,OC 🇭🇲
-  - DOMAIN,ptest-4.ipcheck.ing,EU 🇪🇺
-  - DOMAIN,ptest-5.ipcheck.ing,SG 🇸🇬
-  - DOMAIN,ptest-6.ipcheck.ing,KR 🇰🇷
+  - DOMAIN,ptest-3.ipcheck.ing,SEA 🇹🇱
+  - DOMAIN,ptest-4.ipcheck.ing,LAF 🇿🇦
+  - DOMAIN,ptest-5.ipcheck.ing,OC 🇭🇲
+  - DOMAIN,ptest-6.ipcheck.ing,RU 🇷🇺
   - DOMAIN,ptest-7.ipcheck.ing,JP 🇯🇵
-  - DOMAIN,ptest-8.ipcheck.ing,US 🇺🇸
+  - DOMAIN,ptest-8.ipcheck.ing,KR 🇰🇷
 
   - RULE-SET,private,DIRECT
 #  - RULE-SET,reject,REJECT
@@ -56,6 +56,7 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
 
 
