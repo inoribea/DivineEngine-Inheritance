@@ -32,8 +32,7 @@ rules:
   - RULE-SET,spotify,Media 📺
   - RULE-SET,disney,Media 📺
   - RULE-SET,google,Service 📶
-  - RULE-SET,icloud,Service 📶
-  - RULE-SET,apple,Service 📶
+  - RULE-SET,apple,Cross ⚖️
   - RULE-SET,gfw,Wall 🧱
   - RULE-SET,proxy,Proxy
 #  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
@@ -56,6 +55,7 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
 
 
