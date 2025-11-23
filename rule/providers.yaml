@@ -21,6 +21,13 @@ rule-providers:
     path: ./rule_provider/cross.yaml
     interval: 86400
 
+  game:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/game.txt"
+    path: ./rule_provider/game.yaml
+    interval: 86400
+
   microsoft:
     type: http
     behavior: domain
