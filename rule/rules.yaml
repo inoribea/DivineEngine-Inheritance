@@ -35,7 +35,7 @@ rules:
   - RULE-SET,apple,Cross ⚖️
   - RULE-SET,gfw,Wall 🧱
   - RULE-SET,proxy,Proxy
-#  - AND,((DOMAIN,steamserver.net),(NETWORK,UDP)),Game 🎮
+  - RULE-SET,game,Game 🎮
 #  - RULE-SET,direct,DIRECT
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,telegramcidr,Social 💬,no-resolve
