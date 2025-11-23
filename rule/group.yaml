@@ -10,7 +10,7 @@ proxy-groups:
   - Cross ⚖️
   - DIRECT
   filter: "(?i).+$"
-  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  exclude-filter: "解锁|自动|回落|官网|剩余|套餐|GB|Expire"
   udp-over-tcp: true
   
 -
@@ -18,7 +18,7 @@ proxy-groups:
   type: url-test
   include-all-proxies: true
   filter: "(?i)🏠|⚪|🔴|🔵|🟢|特殊"
-  exclude-filter: "解锁|自动|回落|直连|官网|剩余|套餐|GB|Expire"
+  exclude-filter: "解锁|自动|回落|官网|剩余|套餐|GB|Expire"
   url: 'http://speedtest.inoribea.moe'
   interval: 360
   hidden: true
