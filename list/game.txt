@@ -50,8 +50,6 @@ payload:
   - '*.valvesoftware.com'
   - '*.wmsjsteam.com'
 
-#ygo
-  - '103.150.8.98/32'
 # Services
   - '*.fanatical.com'
   - '*.humblebundle.com'
