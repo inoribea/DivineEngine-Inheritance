@@ -67,7 +67,7 @@ rule-providers:
     type: http
     behavior: domain
     url: "https://gh-proxy.com/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/debug.txt"
-    path: ./rule_provider/cdebug.yaml
+    path: ./rule_provider/debug.yaml
     interval: 86400
 
   ai:
