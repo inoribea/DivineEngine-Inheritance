@@ -5,7 +5,7 @@ rules:
   - DST-PORT,3479,Domestic
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
-  - DOMAIN-KEYWORD,cdn,PASS
+#  - DOMAIN-KEYWORD,cdn,PASS
   - DOMAIN-KEYWORD,mirrors,DIRECT
   
   - DOMAIN,ptest-1.ipcheck.ing,EU 🇪🇺
