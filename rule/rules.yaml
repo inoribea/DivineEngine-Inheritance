@@ -3,7 +3,6 @@
 rules:
   - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,Domestic
-  - IPCIDR,103.150.8.98/32,Game 🎮
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
   - DOMAIN-KEYWORD,cdn,PASS
