@@ -3,6 +3,7 @@
 rules:
   - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,Domestic
+  - DST-PORT,36666,DIRECT
 
   - DOMAIN-SUFFIX,bing.com,DIRECT
 #  - DOMAIN-KEYWORD,cdn,PASS
@@ -56,6 +57,7 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
 
 
