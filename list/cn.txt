@@ -9,6 +9,8 @@ payload:
   - 'linux.do'
 # AI
   - 'dashscope.aliyuncs.com'
+  - 'api.linkapi.org'
+  - 'jp.duckcoding.com'
 # Astro
   - 'vizier.china-vo.org'
   - 'mast.stsci.edu'
