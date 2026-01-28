@@ -38,6 +38,7 @@ payload:
   - '*.steamgames.com'
   - '*.steampipe.akamaized.net'
   - '*.steampowered.com.8686c.com'
+  - '*.discovery.steamserver.net'
   - '*.steamserver.net'
   - '*.steamstat.us'
   - '*.steamstatic.com'
