@@ -11,6 +11,7 @@ payload:
   - 'dashscope.aliyuncs.com'
   - 'api.linkapi.org'
   - 'jp.duckcoding.com'
+  - 'hf-mirror.com'
 # Astro
   - 'vizier.china-vo.org'
   - 'mast.stsci.edu'
