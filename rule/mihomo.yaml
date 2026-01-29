@@ -28,13 +28,14 @@ tun:
   enable: true
   stack: mixed
   device: utun
+  mtu: 1500
   dns-hijack:
     - any:53
   endpoint-independent-nat: true
-  auto-route: false
+  auto-route: true
   auto-redirect: false
   strict-route: false
-  auto-detect-interface: false
+  auto-detect-interface: true
 
 external-controller: '0.0.0.0:9090'
 external-controller-cors:
@@ -46,3 +47,4 @@ profile:
 experimental:
   sniff-tls-sni: false
 ##############################################################################################################################
+
