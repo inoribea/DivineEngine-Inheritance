@@ -5,9 +5,9 @@ rules:
   - DST-PORT,3479,Domestic
   - DST-PORT,36666,DIRECT
 
-  - DOMAIN-SUFFIX,bing.com,DIRECT
 #  - DOMAIN-KEYWORD,cdn,PASS
   - DOMAIN-KEYWORD,mirrors,DIRECT
+  - DOMAIN-SUFFIX,hf-mirror.com,DIRECT,no-resolve
   
   - DOMAIN,ptest-1.ipcheck.ing,EU 🇪🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
