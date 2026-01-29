@@ -26,4 +26,5 @@ payload:
   - 'ygom.top'
   - '+.neos.moe'
   - '+.moecube.com'
+  - '+.radminte.com'
 
