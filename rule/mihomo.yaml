@@ -18,6 +18,7 @@ bind-address: "*"
 keep-alive-interval: 15
 keep-alive-idle: 600
 unified-delay: true
+tcp-concurrent: true
 
 listeners:
   - name: tproxy-in
@@ -47,4 +48,5 @@ profile:
 experimental:
   sniff-tls-sni: false
 ##############################################################################################################################
+
 
