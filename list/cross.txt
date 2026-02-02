@@ -1,3 +1,4 @@
 payload:
 # Services
   - '*.intel.com'
+  - '*.akamaized.net'
