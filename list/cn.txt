@@ -16,7 +16,7 @@ payload:
   - 'vizier.china-vo.org'
   - 'mast.stsci.edu'
 # CDN
-  - '+.aka.ms'
+  - 'aka.ms'
   - 'ch3ng.top'
   - 'gh-proxy.com'
   - 'ghproxy.cn'
