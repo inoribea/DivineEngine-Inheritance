@@ -5,3 +5,5 @@ payload:
   - 'gea.esac.esa.int'
   - 'ssd.jpl.nasa.gov'
   - 'almascience.org'
+  - 'almascience.eso.org'
+  - 'adsabs.harvard.edu'
