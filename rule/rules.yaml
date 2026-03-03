@@ -29,6 +29,7 @@ rules:
   - RULE-SET,ai,AI ✨
   - RULE-SET,astro,AI ✨
   - RULE-SET,bahamut,Social 💬
+  - RULE-SET,tiktok,Social 💬
   - RULE-SET,youtube,Media 📺
   - RULE-SET,spotify,Media 📺
   - RULE-SET,disney,Media 📺
@@ -57,6 +58,7 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
 
 
