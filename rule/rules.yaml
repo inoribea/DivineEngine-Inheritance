@@ -26,6 +26,7 @@ rules:
   - RULE-SET,bilibili,Cross ⚖️
   - RULE-SET,paypal,Cross ⚖️
   - RULE-SET,debug,COMPATIBLE
+  - RULE-SET,gfw,Wall 🧱
   - RULE-SET,ai,AI ✨
   - RULE-SET,astro,AI ✨
   - RULE-SET,bahamut,Social 💬
@@ -35,7 +36,6 @@ rules:
   - RULE-SET,disney,Media 📺
   - RULE-SET,google,Service 📶
   - RULE-SET,apple,Cross ⚖️
-  - RULE-SET,gfw,Wall 🧱
   - RULE-SET,game,Game 🎮
   - RULE-SET,pcdn,BlackHole 🧅
   - RULE-SET,proxy,Proxy
@@ -58,6 +58,7 @@ rules:
   - MATCH,Proxy
 
 ##############################################################################################################################
+
 
 
 
