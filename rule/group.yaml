@@ -52,6 +52,7 @@ proxy-groups:
   - HK 🇭🇰
   - TW 🇹🇼
   - US 🇺🇸
+  - EU 🇪🇺
   - Domestic
 
 -
@@ -62,6 +63,7 @@ proxy-groups:
   - US 🇺🇸
   - JP 🇯🇵
   - KR 🇰🇷
+  - EU 🇪🇺
   - Domestic
 
 -
@@ -85,6 +87,7 @@ proxy-groups:
   - KR 🇰🇷
   - HK 🇭🇰
   - TW 🇹🇼
+  - EU 🇪🇺
   - Domestic
   include-all-proxies: true
   filter: "(?i)流媒体|视频|油管|网飞|media"
@@ -259,5 +262,6 @@ proxy-groups:
   udp-over-tcp: true
 
 ##############################################################################################################################
+
 
 
