@@ -2,3 +2,4 @@ payload:
 # Services
   - '*.intel.com'
   - '*.akamaized.net'
+  - '*.xethub.hf.co'
