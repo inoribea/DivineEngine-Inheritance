@@ -21,7 +21,6 @@ payload:
   - 'gh-proxy.com'
   - 'ghproxy.cn'
   - 'ghproxy.cfd'
-  - 'cdn.jsdelivr.net'
 # Game
   - '+.superpre.pro'
   - 'ygom.top'
