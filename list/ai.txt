@@ -1,4 +1,5 @@
 payload:
+  - 'cdn.jsdelivr.net'
   - 'api.nekoapi.com'
   - 'openrouter.ai'
   - '+.openai.com'
