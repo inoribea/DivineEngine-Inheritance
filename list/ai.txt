@@ -6,6 +6,7 @@ payload:
   - 'api.nekoapi.com'
   - 'openrouter.ai'
   - '+.openai.com'
+  - '+.sora.com'
   - '+.openai.nooc.ink'
   - '+.cdn.auth0.com'
   - '+.azureedge.net'
