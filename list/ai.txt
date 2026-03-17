@@ -1,6 +1,5 @@
 payload:
 #Others
-  - 'cloudflaremirrors.com'
   - 'cdn.jsdelivr.net'
 #AI
   - 'api.nekoapi.com'
