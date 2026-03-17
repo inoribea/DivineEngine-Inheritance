@@ -1,6 +1,7 @@
 payload:
 #Others
   - 'cdn.jsdelivr.net'
+  - 'cloudflaremirrors.com'
 #AI
   - 'api.nekoapi.com'
   - 'openrouter.ai'
