@@ -3,6 +3,7 @@ payload:
   - 'cdn.jsdelivr.net'
   - 'cloudflaremirrors.com'
 #AI
+  - '+.liblib.tv'
   - 'api.nekoapi.com'
   - 'openrouter.ai'
   - '+.openai.com'
