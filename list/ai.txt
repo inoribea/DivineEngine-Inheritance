@@ -5,7 +5,8 @@ payload:
 #AI
   - '+.liblib.tv'
   - 'api.nekoapi.com'
-  - 'openrouter.ai'
+  - 'opencode.ai'
+  - '+.openrouter.ai'
   - '+.openai.com'
   - '+.sora.com'
   - '+.openai.nooc.ink'
