@@ -34,7 +34,7 @@ payload:
   - 'alkalimakersuite-pa.clients6.google.com'
   - 'cdn.usefathom.com'
   - '+.anthropic.com'
-  - '+.claude.com‘
+  - '+.claude.com'
   - '+.claude.ai'
   - '+.poe.com'
   - '+.groq.com'
