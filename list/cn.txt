@@ -5,8 +5,6 @@ payload:
   - '+.nxns.link'
   - '+.189.cn'
   - 'izzy.zw.is'
-  - 'o3.fan'
-  - '+.linux.do'
 # AI
   - 'dashscope.aliyuncs.com'
   - 'api.linkapi.org'
