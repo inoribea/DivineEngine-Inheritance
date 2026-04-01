@@ -33,9 +33,11 @@ payload:
   - 'alkalicore-pa.clients6.google.com'
   - 'alkalimakersuite-pa.clients6.google.com'
   - 'cdn.usefathom.com'
+#Anthropic
   - '+.anthropic.com'
   - '+.claude.com'
   - '+.claude.ai'
+  - '+.datadoghq.com'
   - '+.poe.com'
   - '+.groq.com'
   - 'gateway.ai.cloudflare.com'
