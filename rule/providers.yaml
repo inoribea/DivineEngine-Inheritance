@@ -24,7 +24,8 @@ rule-providers:
   game:
     type: http
     behavior: domain
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/DivineEngine-Inheritance/refs/heads/main/list/game.txt"
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game
+/Game.yaml"
     path: ./rule_provider/game.yaml
     interval: 86400
 
