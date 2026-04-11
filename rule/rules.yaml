@@ -3,6 +3,7 @@
 rules:
   - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,3479,Domestic
+  - DST-PORT,853,Domestic
   - DST-PORT,36666,DIRECT
 
 #  - DOMAIN-KEYWORD,cdn,PASS
