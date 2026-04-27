@@ -204,7 +204,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|阿塞拜疆|UAE|Dubai|Turkey|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria|Azerbaijan"
+  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|阿塞拜疆|哈萨克斯坦|UAE|Dubai|Turkey|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria|Azerbaijan|Kazakhstan"
 
 -
   name: "SEA 🇹🇱"
@@ -213,7 +213,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|哈萨克斯坦|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia|Kazakhstan"
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia"
 
 -
   name: "LAF 🇿🇦"
