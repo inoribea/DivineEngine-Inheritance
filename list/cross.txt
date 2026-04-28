@@ -4,6 +4,5 @@ payload:
   - '*.intel.com'
   - '*.akamaized.net'
   - '*.xethub.hf.co'
-  - '+.linux.do'
   - '+.misskey.io'
   - '+.misskey.xyz'
