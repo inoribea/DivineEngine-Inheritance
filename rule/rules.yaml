@@ -53,10 +53,10 @@ rules:
   
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
+  - NETWORK,udp,DIRECT
   - DST-PORT,80,Others 🛰️
   - DST-PORT,443,Others 🛰️
-  - DST-PORT,60070,DIRECT
-  - NETWORK,udp,DIRECT
+  - DST-PORT,60070,DIRECT
   - MATCH,Proxy
 
 ##############################################################################################################################
