@@ -53,6 +53,7 @@ proxy-groups:
   - TW 🇹🇼
   - US 🇺🇸
   - EU 🇪🇺
+  - Cross ⚖️
   - Domestic
 
 -
@@ -64,6 +65,7 @@ proxy-groups:
   - JP 🇯🇵
   - KR 🇰🇷
   - EU 🇪🇺
+  - Cross ⚖️
   - Domestic
 
 -
@@ -76,7 +78,7 @@ proxy-groups:
   - KR 🇰🇷
   - EU 🇪🇺
   - OC 🇭🇲
-  - MEF 🇸🇦
+  - Cross ⚖️
   - Domestic
 
 -
@@ -90,6 +92,7 @@ proxy-groups:
   - HK 🇭🇰
   - TW 🇹🇼
   - EU 🇪🇺
+  - Cross ⚖️
   - Domestic
   include-all-proxies: true
   filter: "(?i)流媒体|视频|油管|网飞|media"
@@ -99,6 +102,7 @@ proxy-groups:
   type: select
   proxies:
   - Proxy
+  - Cross ⚖️
   - Domestic
 
 -
