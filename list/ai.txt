@@ -2,6 +2,7 @@ payload:
 #Others
   - 'cdn.jsdelivr.net'
   - 'cloudflaremirrors.com'
+  - '+.ryo.lu'
 #AI
   - '+.liblib.tv'
   - 'api.nekoapi.com'
