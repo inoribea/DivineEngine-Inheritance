@@ -73,6 +73,7 @@ proxy-groups:
   type: select
   proxies:
   - Proxy
+  - TW 🇹🇼
   - US 🇺🇸
   - JP 🇯🇵
   - KR 🇰🇷
