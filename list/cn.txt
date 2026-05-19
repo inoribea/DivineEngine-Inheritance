@@ -9,7 +9,7 @@ payload:
 # AI
   - 'dashscope.aliyuncs.com'
   - 'api.linkapi.org'
-  - 'jp.duckcoding.com'
+  - '+.duckcoding.ai'
   - 'hf-mirror.com'
 # Astro
   - 'vizier.china-vo.org'
