@@ -1,6 +1,8 @@
 payload:
 # Services
   - '+.linux.do'
+  - 'challenges.cloudflare.com'
+# Google AI
   - '+.google-analytics.com'
   - '+.identrust.com'
   - '+.ai.com'
