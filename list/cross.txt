@@ -1,6 +1,5 @@
 payload:
 # Services
-  - 'challenges.cloudflare.com'
   - '*.intel.com'
   - '*.akamaized.net'
   - '*.xethub.hf.co'
