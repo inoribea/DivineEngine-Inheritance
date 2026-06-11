@@ -7,10 +7,19 @@ proxy-groups:
   include-all-proxies: true
   proxies:
   - Auto
-  - Cross ⚖️
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - US 🇺🇸
+  - EU 🇪🇺
+  - RU 🇷🇺
+  - MEF 🇸🇦
+  - OC 🇭🇲
+  - SEA 🇹🇱
+  - LAF 🇿🇦
   - DIRECT
-  filter: "(?i).+$"
-  exclude-filter: "解锁|自动|回落|官网|剩余|套餐|GB|Expire"
   udp-over-tcp: true
   
 -
@@ -201,7 +210,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)俄|乌克|ru|Russia|Ukraine"
+  filter: "(?i)俄|乌克|蒙古|ru|Russia|Ukraine|Mongolia"
    
 -
   name: "MEF 🇸🇦"
@@ -219,7 +228,7 @@ proxy-groups:
   - Domestic
   - REJECT
   include-all-proxies: true
-  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|蒙古|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India|ib|Mongolia"
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India"
 
 -
   name: "LAF 🇿🇦"
