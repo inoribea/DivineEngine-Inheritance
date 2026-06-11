@@ -4,7 +4,6 @@ proxy-groups:
 -
   name: Proxy
   type: select
-  include-all-proxies: false
   proxies:
   - Auto
   - HK 🇭🇰
