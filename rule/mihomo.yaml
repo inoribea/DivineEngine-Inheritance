@@ -12,7 +12,7 @@
 udp: true
 ipv6: true
 allow-lan: true 
-mode: Rule
+mode: rule
 geo-auto-update: false
 bind-address: "*"
 keep-alive-interval: 15
