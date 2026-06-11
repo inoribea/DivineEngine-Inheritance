@@ -20,6 +20,7 @@ rules:
   - DOMAIN,ptest-8.ipcheck.ing,KR 🇰🇷
 
   - RULE-SET,game,Game 🎮
+  - RULE-SET,service,Service 📶
   - RULE-SET,google,Service 📶
   - RULE-SET,youtube,Media 📺
   - RULE-SET,spotify,Media 📺
