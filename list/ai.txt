@@ -5,10 +5,9 @@ payload:
   - '+.ryo.lu'
 #AI
   - '+.kilo.ai'
-  - '+.liblib.tv'
-  - 'api.nekoapi.com'
-  - 'opencode.ai'
+  - '+.opencode.ai'
   - '+.openrouter.ai'
+  - '+.z.ai'
   - '+.openai.com'
   - '+.sora.com'
   - '+.openai.nooc.ink'
