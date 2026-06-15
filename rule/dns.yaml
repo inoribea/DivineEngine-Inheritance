@@ -7,14 +7,24 @@ dns:
   ipv6: true
   enhanced-mode: redir-host
   listen: '[::]:7853'
+
   nameserver:
-  - udp://223.5.5.5
-  - https://doh.pub/dns-query
+    - 'https://dns.quad9.net/dns-query'
+    - 'https://cloudflare-dns.com/dns-query'
+
+  nameserver-policy:
+    geosite:cn:
+      - 'https://doh.pub/dns-query'
+      - 'https://dns.alidns.com/dns-query'
+
   fallback:
-  - udp://94.140.14.14
-  - https://1.1.1.1/dns-query
+    - 'tls://8.8.8.8'
+    - 'tls://1.1.1.1'
+
   default-nameserver:
-  - 119.29.29.29
+    - 8.8.8.8
+    - 1.1.1.1
+
   fallback-filter:
     geoip: true
     geoip-code: CN
@@ -44,10 +54,13 @@ dns:
       - "+.googlevideo.com"
       - "+.msftconnecttest.com"
       - "+.msftncsi.com"
+
   fake-ip-range: 198.18.0.1/16
+
 profile:
   store-selected: true
   store-fake-ip: false
+
 experimental:
   sniff-tls-sni: false
 
@@ -75,7 +88,6 @@ sniffer:
 
 
   
-  
-  ##############################################################################################################################
-  
 
+
+  ##############################################################################################################################
