@@ -8,7 +8,6 @@ payload:
   - '+.dell.com'
 # AI
   - 'dashscope.aliyuncs.com'
-  - '+.duckcoding.ai'
   - 'hf-mirror.com'
 # Astro
   - 'vizier.china-vo.org'
