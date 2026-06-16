@@ -4,6 +4,7 @@ payload:
   - 'cloudflaremirrors.com'
   - '+.ryo.lu'
 #AI
+  - '+.duckcoding.ai'
   - '+.kilo.ai'
   - '+.opencode.ai'
   - '+.openrouter.ai'
