@@ -6,6 +6,7 @@ payload:
 #AI
   - '+.duckcoding.ai'
   - '+.kilo.ai'
+  - '+.vercel.sh'
   - '+.opencode.ai'
   - '+.openrouter.ai'
   - '+.z.ai'
