@@ -1,7 +1,7 @@
 ##############################################################################################################################
 
 dns:
-  enable: true
+  enable: false
   prefer-h3: true
   fake-ip-filter-mode: blacklist
   ipv6: true
