@@ -7,6 +7,13 @@ rule-providers:
 #    path: ./rule_provider/reject.yaml
 #    interval: 172800
 
+  amt:
+    type: http
+    behavior: domain
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/amt.yaml"
+    path: ./rule_provider/amt.yaml
+    interval: 86400
+
   cn:
     type: http
     behavior: domain
@@ -198,6 +205,48 @@ rule-providers:
     url: "https://gh-proxy.org/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/refs/heads/release/applications.txt"
     path: ./rule_provider/applications.yaml
     interval: 172800
+
+  cn-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/CN.yaml"
+    path: ./rule_provider/cn-cidr.yaml
+    interval: 86400
+
+  hk-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/HK.yaml"
+    path: ./rule_provider/hk-cidr.yaml
+    interval: 86400
+
+  tw-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/TW.yaml"
+    path: ./rule_provider/tw-cidr.yaml
+    interval: 86400
+
+  jp-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/JP.yaml"
+    path: ./rule_provider/jp-cidr.yaml
+    interval: 86400
+
+  sg-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/SG.yaml"
+    path: ./rule_provider/sg-cidr.yaml
+    interval: 86400
+
+  us-cidr:
+    type: http
+    behavior: ipcidr
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/US.yaml"
+    path: ./rule_provider/us-cidr.yaml
+    interval: 86400
   
 #  us-cidr:
 #    type: http
@@ -218,10 +267,9 @@ rule-providers:
   kr-cidr:
     type: http
     behavior: ipcidr
-    format: mrs
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/Loyalsoldier/geoip/refs/heads/release/mrs/kr.mrs"
-    path: ./mrs/geoip/kr.mrs
-    interval: 347600
+    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/KR.yaml"
+    path: ./rule_provider/kr-cidr.yaml
+    interval: 86400
       
   twitter-cidr: 
     type: http

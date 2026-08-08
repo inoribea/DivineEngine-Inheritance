@@ -6,6 +6,8 @@ rules:
   - DST-PORT,853,Domestic
   - DST-PORT,36666,DIRECT
 
+  - RULE-SET,amt,REJECT
+
 #  - DOMAIN-KEYWORD,cdn,PASS
   - DOMAIN-KEYWORD,mirrors,DIRECT
   - DOMAIN-SUFFIX,hf-mirror.com,DIRECT,no-resolve
@@ -48,6 +50,12 @@ rules:
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
   - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
   - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
+  - RULE-SET,cn-cidr,DIRECT,no-resolve
+  - RULE-SET,hk-cidr,HK 🇭🇰,no-resolve
+  - RULE-SET,tw-cidr,TW 🇹🇼,no-resolve
+  - RULE-SET,jp-cidr,JP 🇯🇵,no-resolve
+  - RULE-SET,sg-cidr,SG 🇸🇬,no-resolve
+  - RULE-SET,us-cidr,US 🇺🇸,no-resolve
 
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
