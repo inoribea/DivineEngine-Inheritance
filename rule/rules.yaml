@@ -48,7 +48,6 @@ rules:
   - RULE-SET,telegramcidr,Social 💬,no-resolve
   - RULE-SET,twitter-cidr,Social 💬,no-resolve
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
-  - RULE-SET,kr-cidr,KR 🇰🇷,no-resolve
   - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
 
   - GEOIP,LAN,DIRECT
