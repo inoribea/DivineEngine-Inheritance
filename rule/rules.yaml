@@ -3,7 +3,7 @@
 rules:
   - PROCESS-NAME,tailscaled,Domestic
   - DST-PORT,53,DIRECT
-  - DST-PORT,3479,Domestic
+  - DST-PORT,3479,Domestic
   - DST-PORT,36666,DIRECT
   - DST-PORT,18883,DIRECT
 
