@@ -222,12 +222,6 @@ rule-providers:
 #    path: ./mrs/geoip/jp.mrs
 #    interval: 345600
 
-  kr-cidr:
-    type: http
-    behavior: ipcidr
-    url: "https://gh-proxy.org/https://raw.githubusercontent.com/inoribea/patchomo/master/output/ruleset/KR.yaml"
-    path: ./rule_provider/kr-cidr.yaml
-    interval: 86400
       
   twitter-cidr: 
     type: http
