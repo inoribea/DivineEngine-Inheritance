@@ -7,7 +7,7 @@ rules:
   - DST-PORT,36666,DIRECT
   - DST-PORT,18883,DIRECT
 
-  - RULE-SET,amt,REJECT
+  - RULE-SET,amt,BlackHole 🧅
 
 #  - DOMAIN-KEYWORD,cdn,PASS
   - DOMAIN-KEYWORD,mirrors,DIRECT
