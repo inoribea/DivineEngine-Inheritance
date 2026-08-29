@@ -18,6 +18,8 @@ payload:
   - 'gh-proxy.com'
   - 'ghproxy.cn'
   - 'ghproxy.cfd'
+  - '+.quandao.com'
+  - '+.cdn.bcebos.co'
 # Game
   - '+.superpre.pro'
   - 'ygom.top'
