@@ -7,6 +7,7 @@ payload:
   - 'izzy.zw.is'
   - '+.dell.com'
 # AI
+  - 'apicn.apilio.ai'
   - 'dashscope.aliyuncs.com'
   - 'hf-mirror.com'
 # Astro
