@@ -29,11 +29,11 @@ rules:
   - RULE-SET,youtube,Media 📺
   - RULE-SET,spotify,Media 📺
   - RULE-SET,disney,Media 📺
+  - RULE-SET,tiktok,Media 📺
   - RULE-SET,ai,AI ✨
   - RULE-SET,astro,AI ✨
   - RULE-SET,social,Social 💬
   - RULE-SET,bahamut,Social 💬
-  - RULE-SET,tiktok,Social 💬
 
   - RULE-SET,microsoft,Cross ⚖️
   - RULE-SET,apple,Cross ⚖️
