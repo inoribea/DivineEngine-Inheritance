@@ -2,6 +2,7 @@ payload:
   # Microsoft
   - 'img-s-msn-com.akamaized.net'
   - 'officecdn-microsoft-com.akamaized.net'
+  - 'dl.delivery.mp.microsoft.com'
   - '+.1drv.com'
   - '+.1drv.ms'
   - '+.adj.st'
