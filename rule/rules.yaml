@@ -1,7 +1,8 @@
 ##############################################################################################################################
 
 rules:
-  - PROCESS-NAME,tailscaled,Domestic
+  - PROCESS-NAME,tailscaled.exe,Domestic
+  - PROCESS-NAME,tailscale.exe,Domestic
   - DST-PORT,53/853,DIRECT
   - DST-PORT,3479,DIRECT
   - DST-PORT,18883/36666,DIRECT
