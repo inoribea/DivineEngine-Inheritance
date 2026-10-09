@@ -29,8 +29,43 @@ payload:
   - '+.x.ai'
   - '+.perplexity.ai'
   - '+.meta.ai'
+#Apple
+  - 'guzzoni.apple.com'
+  - 'mask-api.fe.apple-dns.net'
+  - 'mask-api.icloud.com'
+  - 'mask-t.apple-dns.net'
+  - 'mask.apple-dns.net'
+  - '+.smoot.apple.com'
+  - '+.apple-relay.apple.com'
+  - '+.apple-relay.cloudflare.com'
+  - '+.apple-relay.fastly-edge.com'
+  - '+.apple-relay.mask.apple-dns.net'
+  - '+.cp4.cloudflare.com'
+  - '+.gspe1-ssl.ls.apple.com'
 #Anthropic
   - '+.anthropic.com'
   - '+.claude.com'
   - '+.claude.ai'
+  - '+.claudemcpclient.com'
+  - '+.claudeusercontent.com'
+  - 'servd-anthropic-website.b-cdn.net'
   - '+.datadoghq.com'
+#ChatGPT
+  - '+.chat.com'
+  - '+.livekit.cloud'
+  - 'api.statsig.com'
+  - 'chat.openai.com.cdn.cloudflare.net'
+  - 'openai-api.arkoselabs.com'
+  - 'openaicomproductionae4b.blob.core.windows.net'
+  - '+.client-api.arkoselabs.com'
+#Microsoft Copilot
+  - 'copilot.microsoft.com'
+  - 'sydney.bing.com'
+  - 'www.bing.com'
+#GitHub Copilot
+  - '+.githubcopilot.com'
+#Grok
+  - '+.grok.com'
+#Perplexity
+  - '+.pplx.ai'
+  - 'pplx-res.cloudinary.com'
