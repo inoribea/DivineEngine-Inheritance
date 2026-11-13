@@ -1,8 +1,5 @@
 payload:
 # Services
-  - '+.pro.xns.one'
-  - '+.raito.xns.one'
-  - '+.nxns.link'
   - '+.189.cn'
   - 'izzy.zw.is'
   - '+.dell.com'
