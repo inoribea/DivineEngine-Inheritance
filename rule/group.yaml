@@ -290,7 +290,6 @@ proxy-groups:
   name: "Domestic 🏠"
   type: select
   proxies:
-  - CN-Safe 🛡️
   - DIRECT
   hidden: true
    
