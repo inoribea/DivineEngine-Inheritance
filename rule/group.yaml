@@ -1,3 +1,36 @@
+##############################################################################################################################
+
+proxy-groups:
+-
+  name: Proxy
+  type: select
+  proxies:
+  - Auto
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - US 🇺🇸
+  - EU 🇪🇺
+  - RU 🇷🇺
+  - MEF 🇸🇦
+  - OC 🇭🇲
+  - SEA 🇹🇱
+  - LAF 🇿🇦
+  - DIRECT
+  
+-
+  name: Auto
+  type: url-test
+  include-all-proxies: true
+  filter: "(?i)🏠|⚪|🔴|🔵|🟢|特殊"
+  exclude-filter: "解锁|自动|回落|官网|剩余|套餐|GB|Expire"
+  url: 'https://cp.cloudflare.com/generate_204'
+  interval: 360
+  hidden: true
+  udp-over-tcp: true
+ 
 -
   name: "Cross ⚖️"
   type: select
@@ -39,7 +72,219 @@
   - SG 🇸🇬
   - JP 🇯🇵
 
-# ...（中间各业务与国家地区分组原封不动）...
+-
+  name: "Social 💬"
+  type: select
+  proxies:
+  - Proxy
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - US 🇺🇸
+  - EU 🇪🇺
+  - Cross ⚖️
+  - Domestic
+
+-
+  name: "Service 📶"
+  type: select
+  proxies:
+  - Proxy
+  - TW 🇹🇼
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - EU 🇪🇺
+  - Cross ⚖️
+  - Domestic
+
+-
+  name: "AI ✨"
+  type: select
+  proxies:
+  - Proxy
+  - TW 🇹🇼
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - SG 🇸🇬
+  - EU 🇪🇺
+  - OC 🇭🇲
+  - Cross ⚖️
+  - Domestic
+
+-
+  name: "Media 📺"
+  type: select
+  proxies:
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - HK 🇭🇰
+  - TW 🇹🇼
+  - EU 🇪🇺
+  - Cross ⚖️
+  - Domestic
+  include-all-proxies: true
+  filter: "(?i)流媒体|视频|油管|网飞|media"
+
+-  
+  name: "Others 🛰️"
+  type: select
+  proxies:
+  - Proxy
+  - Cross ⚖️
+  - Domestic
+
+-
+  name: "Wall 🧱"
+  type: select
+  proxies:
+  - Proxy
+  - Domestic
+
+-
+  name: "HK 🇭🇰"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)香港|澳门|hk|Macao"
+ 
+   
+-
+  name: "TW 🇹🇼"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)台湾|tw"
+ 
+
+-
+  name: "JP 🇯🇵"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)日本|jp"
+ 
+   
+-
+  name: "KR 🇰🇷"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)韩|kr"
+ 
+
+-
+  name: "SG 🇸🇬"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)新加坡|狮城|sg"
+ 
+
+-
+  name: "OC 🇭🇲"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)澳大|斐济|新西兰|南极|Australia|Fiji|New Zealand|Antarctica"
+ 
+
+-
+  name: "EU 🇪🇺"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)德国|法国|英国|意大利|西班牙|荷兰|匈牙利|卢森堡|丹麦|奥地利|挪威|捷克|立陶宛|北马其顿|冰岛|瑞士|Germany|France|United Kingdom|Italy|Spain|Netherlands|Hungary|Luxembourg|Denmark|Austria|Norway|Czech|Czechia|Lithuania|North Macedonia|Iceland|Switzerland"
+ 
+
+-
+  name: "US 🇺🇸"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)美国|加拿大|us |USA|Canada"
+
+   
+-
+  name: "RU 🇷🇺"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)俄|乌克|蒙古|ru|Russia|Ukraine|Mongolia"
+   
+-
+  name: "MEF 🇸🇦"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)阿联酋|迪拜|土耳其|埃及|也门|伊拉克|以色列|约旦|尼日利亚|阿塞拜疆|哈萨克斯坦|UAE|Dubai|Turkey|Egypt|Yemen|Iraq|Israel|Jordan|sa |tr |Nigeria|Azerbaijan|Kazakhstan"
+
+-
+  name: "SEA 🇹🇱"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)菲律宾|马来西亚|泰国|印尼|缅甸|越南|柬埔寨|老挝|尼泊尔|印度|Philippines|Malaysia|Thailand|Indonesia|Myanmar|Vietnam|Cambodia|Laos|Nepal|India"
+
+-
+  name: "LAF 🇿🇦"
+  type: select
+  proxies:
+  - Domestic
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)秘鲁|智利|玻利维亚|阿根廷|巴西|南非|多哥|法属圭亚那|Peru|Chile|Bolivia|Argentina|Brazil|South Africa|Johannesburg|Togo|French Guiana"
+
+-
+  name: "Game 🎮"
+  type: select
+  udp : true  
+  proxies:
+  - Domestic
+  - Proxy
+  - US 🇺🇸
+  - JP 🇯🇵
+  - KR 🇰🇷
+  - MEF 🇸🇦
+  - REJECT
+  include-all-proxies: true
+  filter: "(?i)游戏|game"
+
+-
+  name: "BlackHole 🧅"
+  type: select
+  proxies:
+  - REJECT
+  - REJECT-DROP
+  - Domestic
+  - Proxy
 
 -
   name: "Domestic 🏠"
@@ -55,3 +300,5 @@
   proxies:
   - Domestic 🏠
   hidden: true
+
+##############################################################################################################################
