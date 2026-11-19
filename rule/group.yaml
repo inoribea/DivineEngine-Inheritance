@@ -35,7 +35,7 @@ proxy-groups:
   name: "Cross ⚖️"
   type: select
   proxies:
-  - Domestic
+  - CN-Safe 🛡️
   - HK 🇭🇰
   - TW 🇹🇼
   - JP 🇯🇵
@@ -48,7 +48,15 @@ proxy-groups:
   - OC 🇭🇲
   - SEA 🇹🇱
   - LAF 🇿🇦
-   
+
+-
+  name: "CN-Safe 🛡️"
+  type: fallback
+  proxies:
+    - "local-sni-split"
+    - DIRECT
+  url: "https://www.baidu.com/favicon.ico"
+  interval: 60
 -
   name: "Social 💬"
   type: select
