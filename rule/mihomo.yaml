@@ -39,14 +39,14 @@ tun:
   auto-detect-interface: true
 
 external-controller: '0.0.0.0:9090'
+# secret: '' # 建议在客户端或拼接脚本中注入密钥，防止公共 Wi-Fi 或上游光猫 pscan 探测 9090 端口读取连接记录
 external-controller-cors:
   allow-origins:
     - '*'
   allow-private-network: true
 profile:
   store-selected: true
+  store-fake-ip: false
 experimental:
   sniff-tls-sni: false
 ##############################################################################################################################
-
-
