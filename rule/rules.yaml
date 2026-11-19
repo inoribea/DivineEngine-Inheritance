@@ -1,17 +1,36 @@
 ##############################################################################################################################
 
 rules:
+  # 1. 局域网与私有后缀最先放行（必须带 no-resolve，防内网管理页被下方 80 规则误抓）
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,home.arpa,DIRECT
+  - RULE-SET,lancidr,DIRECT,no-resolve
+  - GEOIP,LAN,DIRECT,no-resolve
+
+  # 2. 联机打洞 / 特定高端口直连（非 HTTP/443，无 xid 与网页 SNI 泄露风险，合并底部 60070）
   - DST-PORT,3479,DIRECT
   - DST-PORT,18883/36666,DIRECT
   - DST-PORT,28880-28890,DIRECT
   - DST-PORT,48800,DIRECT
+  - DST-PORT,60070,DIRECT
 
+  # 3. 遥测黑洞 + 三大运营商探针/智家 SDK 域名兜底封杀（防内网 App 里应外合）
+  - DOMAIN-SUFFIX,189cube.com,BlackHole 🧅
+  - DOMAIN-SUFFIX,189smarthome.com,BlackHole 🧅
+  - DOMAIN-SUFFIX,smarthome.chinaunicom.cn,BlackHole 🧅
   - RULE-SET,amt,BlackHole 🧅
 
-#  - DOMAIN-KEYWORD,cdn,PASS
-  - DOMAIN-KEYWORD,mirrors,DIRECT
-  - DOMAIN-SUFFIX,hf-mirror.com,DIRECT,no-resolve
-  
+  # 4. 【核心防线 A】一刀接管所有公网明文 HTTP（废掉 xid 抠手机号/IMEI/股票代码及 UA 设备识别）
+  # 注意：若你有走纯 http:// 的 Linux 软件源且心疼代理流量，请把系统源改成 https://
+  - AND,((NETWORK,TCP),(DST-PORT,80/8080)),Proxy
+
+  # 5. 镜像源（已修正 hf-mirror 多余的 no-resolve，改走本地分片直连）
+  # - DOMAIN-KEYWORD,cdn,PASS
+  - DOMAIN-KEYWORD,mirrors,CN-Safe 🛡️
+  - DOMAIN-SUFFIX,hf-mirror.com,CN-Safe 🛡️
+
+  # 6. 分流测试与海外业务规则（走各自加密代理组，光猫本身不可见）
   - DOMAIN,ptest-1.ipcheck.ing,EU 🇪🇺
   - DOMAIN,ptest-2.ipcheck.ing,MEF 🇸🇦
   - DOMAIN,ptest-3.ipcheck.ing,SEA 🇹🇱
@@ -33,6 +52,11 @@ rules:
   - RULE-SET,social,Social 💬
   - RULE-SET,bahamut,Social 💬
 
+  # 7. 【核心防线 B】在进入国内外混合组（Cross）与国内直连前，掐断直连 QUIC（UDP 443）
+  # 放在海外代理组之后，不影响海外节点跑 QUIC；国内 App（B站/抖音等）会在数毫秒内无感回退至 TCP 443 接受首包分片
+  - AND,((NETWORK,UDP),(DST-PORT,443)),REJECT
+
+  # 8. 国内外折中组（记得在 Cross ⚖️ 的 proxy-groups 候选里把裸 DIRECT 换成 CN-Safe 🛡️）
   - RULE-SET,microsoft,Cross ⚖️
   - RULE-SET,apple,Cross ⚖️
   - RULE-SET,bilibili,Cross ⚖️
@@ -42,29 +66,17 @@ rules:
   - RULE-SET,debug,COMPATIBLE
   - RULE-SET,gfw,Wall 🧱
   - RULE-SET,proxy,Proxy
-  - RULE-SET,cn,DIRECT
 
-  - RULE-SET,lancidr,DIRECT
+  # 9. 海外 IP 段先于国内规则匹配（带 no-resolve 防止拖慢解析）
   - RULE-SET,telegramcidr,Social 💬,no-resolve
   - RULE-SET,twitter-cidr,Social 💬,no-resolve
   - RULE-SET,netflix-cidr,Media 📺,no-resolve
   - RULE-SET,tor-cidr,BlackHole 🧅,no-resolve
 
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - DST-PORT,60070,DIRECT
+  # 10. 国内域名与 IP 全部收口至 CN-Safe 🛡️（走本地首包分片，满速且隐匿 SNI）
+  - RULE-SET,cn,CN-Safe 🛡️
+  - GEOIP,CN,CN-Safe 🛡️
 
   - MATCH,Proxy
 
 ##############################################################################################################################
-
-
-
-
-
-
-
-
-
-
-
